@@ -21,6 +21,7 @@ public class SignupScreen extends AppCompatActivity {
     Button btnsignup;
     Firebase ref;
     ProgressDialog PD;
+    EditText asd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
