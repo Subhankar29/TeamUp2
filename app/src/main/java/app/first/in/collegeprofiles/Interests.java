@@ -11,7 +11,7 @@ import android.widget.Button;
  */
 public class Interests extends AppCompatActivity {
 
-    Button btn_tennis;
+    Button btn_tennis;// have to include the other interest buttons.
 
 
     protected void onCreate(Bundle savedInstanceState) {
