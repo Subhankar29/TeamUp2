@@ -18,30 +18,30 @@
     <Button
         android:layout_width="match_parent"
         android:id="@+id/btn_tennis"
-        android:layout_height="100dp"
-        android:background="@drawable/tennis1"
+        android:layout_height="150dp"
+        android:background="@drawable/net"
         android:text="TENNIS"
-        android:textSize="30dp"
+        android:textSize="40dp"
         android:textColor="#FFFFFF"
         android:layout_margin="15dp"
         />
     <Button
         android:layout_width="match_parent"
         android:id="@+id/btn_dance"
-        android:layout_height="100dp"
-        android:background="@drawable/dance"
+        android:layout_height="150dp"
+        android:background="@drawable/dance4"
         android:text="DANCE"
-        android:textSize="30dp"
-        android:textColor="#000"
+        android:textSize="40dp"
+        android:textColor="#ffa500"
         android:layout_margin="15dp"
         />
     <Button
         android:layout_width="match_parent"
         android:id="@+id/btn_coding"
-        android:layout_height="100dp"
+        android:layout_height="150dp"
         android:background="@drawable/coding"
         android:text="CODING"
-        android:textSize="30dp"
+        android:textSize="40dp"
         android:textColor="#C6FF00"
         android:layout_margin="15dp"
         />
@@ -49,10 +49,10 @@
             <Button
                 android:layout_width="match_parent"
                 android:id="@+id/btn_music"
-                android:layout_height="100dp"
+                android:layout_height="150dp"
                 android:background="@drawable/music"
                 android:text="MUSIC"
-                android:textSize="30dp"
+                android:textSize="40dp"
                 android:textColor="#FFEB3B"
                 android:layout_margin="15dp"
                 />
@@ -60,11 +60,11 @@
             <Button
                 android:layout_width="match_parent"
                 android:id="@+id/btn_football"
-                android:layout_height="100dp"
+                android:layout_height="150dp"
                 android:background="@drawable/football"
                 android:text="FOOTBALL"
                 android:textSize="30dp"
-                android:textColor="#FFFFFF"
+                android:textColor="#FFFF4444"
                 android:layout_margin="15dp"
                 />
                 />
