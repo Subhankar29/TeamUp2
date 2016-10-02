@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                             if (username.equals(dataSnapshot.child("user_accounts").child(username).child("username").getValue())
                                     && password.equals(dataSnapshot.child("user_accounts").child(username).child("password").getValue())) {
 
-                                Intent intent = new Intent(MainActivity.this, Logged.class);
+                                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
                                 startActivity(intent);
 
                                 PD.dismiss();
