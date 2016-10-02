@@ -1,5 +1,6 @@
 package app.first.in.collegeprofiles;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -84,7 +85,13 @@ public class MainActivity2 extends AppCompatActivity
             // Handle the camera action
         } else if (id == R.id.nav_people) {
 
+
+
+
         } else if (id == R.id.nav_interests) {
+            Intent nxtintent = new Intent(MainActivity2.this, Interests.class);
+            startActivity(nxtintent);
+
 
         } else if (id == R.id.nav_settings) {
 

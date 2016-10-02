@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/btn_tennis"
+        android:layout_height="100dp"
+        android:background="@drawable/tennis1"
+        android:text="TENNIS"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"
+        android:layout_margin="15dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/btn_dance"
+        android:layout_height="100dp"
+        android:background="@drawable/dance"
+        android:text="DANCE"
+        android:textSize="30dp"
+        android:textColor="#000"
+        android:layout_margin="15dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/btn_coding"
+        android:layout_height="100dp"
+        android:background="@drawable/coding"
+        android:text="CODING"
+        android:textSize="30dp"
+        android:textColor="#C6FF00"
+        android:layout_margin="15dp"
+        />
+
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/btn_music"
+                android:layout_height="100dp"
+                android:background="@drawable/music"
+                android:text="MUSIC"
+                android:textSize="30dp"
+                android:textColor="#FFEB3B"
+                android:layout_margin="15dp"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/btn_football"
+                android:layout_height="100dp"
+                android:background="@drawable/football"
+                android:text="FOOTBALL"
+                android:textSize="30dp"
+                android:textColor="#FFFFFF"
+                android:layout_margin="15dp"
+                />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>
