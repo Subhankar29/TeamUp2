@@ -19,6 +19,7 @@
         </activity>
         <activity android:name=".SignupScreen" />
         <activity android:name=".Logged" />
+        <activity android:name=".Tennis" />
         <activity android:name=".Interests" />
         <activity
             android:name=".MainActivity2"

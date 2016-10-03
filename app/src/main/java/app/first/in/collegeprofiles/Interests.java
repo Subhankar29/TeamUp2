@@ -25,7 +25,7 @@ public class Interests extends AppCompatActivity {
         btn_tennis.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Interests.this, MainActivity.class);
+                Intent intent = new Intent(Interests.this, Tennis.class);
                 startActivity(intent);
             }
         });
