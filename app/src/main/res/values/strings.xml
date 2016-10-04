@@ -1,5 +1,13 @@
 <resources>
     <string name="app_name">CollegeProfiles</string>
+
+    <string-array name="interest_list">
+        <item>"Coding"</item>
+        <item>"Dance"</item>
+        <item>"Football"</item>
+        <item>"Tennis"</item>
+    </string-array>
+
     <string name="title_activity_main2">College Profiles</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
