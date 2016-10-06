@@ -64,7 +64,6 @@ public class SignupScreen extends AppCompatActivity {
                         @Override
                         public void onComplete(FirebaseError firebaseError, Firebase firebase) {
 
-//dsdsfsdfsdfsfsd
                         }
                     });
                     ref.child("user_accounts").child(username).child("password").setValue(password, new Firebase.CompletionListener() {

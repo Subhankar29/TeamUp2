@@ -45,7 +45,7 @@ public class Interests extends AppCompatActivity {
 
                switch ((position)){
                    case 0:
-                       Intent intent = new Intent(Interests.this, MainActivity.class);
+                       Intent intent = new Intent(Interests.this, Tennis.class);
                        startActivity(intent);
                        break;
 

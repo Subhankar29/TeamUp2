@@ -1,66 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
+    android:background="#263238"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1">
 
-
-    <Switch
-        android:text="Follow"
-        android:layout_width="fill_parent"
-        android:layout_height="48dp"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginTop="170dp"
-        android:id="@+id/switch2" />
-
     <TextView
-        android:text="TextView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        tools:text="Welome to Tennis page. Follow this page to get updates about tennis events happening in Dayananda Sagar college  "
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="133dp" />
+        android:text="TENNIS"
+        android:textSize="30dp"
+        android:background="#000"
+        android:textColor="#FFF"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="237dp">
 
-    <TextView
-        android:layout_width="wrap_content"
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" + follow"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="20dp"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:foregroundGravity="center"
+            android:layout_height="wrap_content"
+            android:src="@drawable/t"
+            android:id="@+id/img"
+            android:scaleType="centerCrop"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+    <Button
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Tennis "
-        android:ems="10"
-        android:id="@+id/editText"
-        android:layout_marginBottom="138dp"
-        android:layout_above="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:text="WALL"
+        android:textSize="15dp"
+        android:textColor="#FFF"
+        android:background="#3F51B5"
+        android:layout_margin="10dp"
 
-    <Switch
-        android:text="Follow"
-        android:layout_width="wrap_content"
+        />
+    <Button
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/switch1"
-        android:layout_alignBottom="@+id/editText"
-        android:layout_alignRight="@+id/switch2"
-        android:layout_alignEnd="@+id/switch2" />
+        android:text="FIND PEOPLE"
+        android:textSize="15dp"
+        android:textColor="#FFF"
+        android:id="@+id/people"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="#3F51B5"
+        android:layout_margin="10dp"
 
-    <ImageView
-        android:layout_width="wrap_content"
+        />
+    <Button
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/tennisg"
-        android:id="@+id/imageView3"
-        android:layout_above="@+id/switch1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="46dp" />
+        android:text="CHAT ROOM"
+        android:textSize="15dp"
+        android:textColor="#FFF"
+        android:background="#3F51B5"
+        android:layout_margin="10dp"
+
+        />
+
+    </LinearLayout>
 
 
-</RelativeLayout>
+</LinearLayout>

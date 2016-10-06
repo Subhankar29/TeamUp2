@@ -21,6 +21,8 @@
         <activity android:name=".Logged" />
         <activity android:name=".Tennis" />
         <activity android:name=".Interests" />
+        <activity android:name=".SignupScreen22" />
+        <activity android:name=".Tennis_People" />
         <activity
             android:name=".MainActivity2"
             android:label="@string/title_activity_main2"
