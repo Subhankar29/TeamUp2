@@ -10,88 +10,127 @@
         android:layout_height="wrap_content"
         android:text="Please select your interests below."
         android:textSize="20dp"
-        android:padding="15dp"/>
+            android:textColor="#000"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ⓘ Checking an interest will keep you updated on anything and everthing related to that field. It will also keep you in touch with others with the same interest."
+        android:textSize="17dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+
+        android:textColor="#26a69a"
+        />
+
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="300dp">
        <LinearLayout
            android:layout_width="match_parent"
            android:layout_height="match_parent"
            android:orientation="vertical">
 
-           <TextView
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:text="SPORTS : "
-               android:textSize="20dp"
-               android:padding="15dp"/>
            <CheckBox
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:padding="15dp"
-               android:text="Tennis"/>
-           <CheckBox
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:padding="15dp"
-               android:text="Cricket"/>
-           <CheckBox
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:padding="15dp"
-               android:text="BasketBall"/>
-           <CheckBox
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:padding="15dp"
-               android:text="FootBall"/>
-           <CheckBox
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:padding="15dp"
-               android:text="VolleyBall"/>
+               android:text="CODING"
+               android:textColor="#616161"
+               android:id="@+id/cod"
+               android:textSize="25dp"/>
 
-           <TextView
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:text="DANCE : "
-               android:textSize="20dp"
-               android:padding="15dp"/>
            <CheckBox
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:padding="15dp"
-               android:text="Folk"/>
+               android:text="SPORTS"
+               android:id="@+id/sport"
+               android:textColor="#616161"
+
+               android:textSize="25dp"/>
+
            <CheckBox
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:padding="15dp"
-               android:text="Contemporary"/>
+               android:id="@+id/dnce"
+               android:text="DANCE"
+               android:textColor="#616161"
+
+               android:textSize="25dp"/>
            <CheckBox
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:padding="15dp"
-               android:text="HipHop"/>
+               android:text="MUSIC"
+               android:id="@+id/music"
+               android:textColor="#616161"
+
+               android:textSize="25dp"/>
+
            <CheckBox
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:padding="15dp"
-               android:text="Classical"/>
+               android:id="@+id/lit"
+               android:textColor="#616161"
+
+               android:text="LITERARY"
+               android:textSize="25dp"/>
+
+
+
+
            <CheckBox
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:padding="15dp"
-               android:text="Western"/>
+
+               android:text="THEATRICS"
+               android:textColor="#616161"
+
+               android:textSize="25dp"
+               android:id="@+id/ttrics" />
+
+
+           <CheckBox
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="15dp"
+               android:text="PHOTOGRAPHY"
+               android:textColor="#616161"
+               android:id="@+id/phto"
+
+               android:textSize="25dp"/>
+           <CheckBox
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="15dp"
+               android:textSize="25dp"
+               android:textColor="#616161"
+               android:id="@+id/misc"
+               android:text="MISCELLANEOUS"/>
+
+
+
+
+
 
        </LinearLayout>
 
     </ScrollView>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnsign"
+        android:text="sign up"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:background="#FF050E49"/>
 
-
-
-
-
-        </LinearLayout>
+</LinearLayout>
 
 

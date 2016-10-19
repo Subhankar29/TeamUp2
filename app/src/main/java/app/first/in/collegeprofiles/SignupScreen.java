@@ -42,7 +42,7 @@ public class SignupScreen extends AppCompatActivity {
         etemail = (EditText)findViewById(R.id.etemail);
         etphone = (EditText)findViewById(R.id.etPhone);
         edtpass = (EditText)findViewById(R.id.edtpass);
-        btnsignup = (Button)findViewById(R.id.btnsign);
+        btnsignup = (Button)findViewById(R.id.btnnext);
 
 
         btnsignup.setOnClickListener(new View.OnClickListener() {
@@ -93,7 +93,7 @@ public class SignupScreen extends AppCompatActivity {
                         }
                     });
                     PD.dismiss();
-                    Intent nxtIntent = new Intent(SignupScreen.this, MainActivity.class);
+                    Intent nxtIntent = new Intent(SignupScreen.this, SignupScreen22.class);
                     startActivity(nxtIntent);
                 }
 
