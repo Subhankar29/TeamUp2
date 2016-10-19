@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent nxtIntent = new Intent(MainActivity.this, SignupScreen22.class);
+                Intent nxtIntent = new Intent(MainActivity.this, SignupScreen.class);
                 startActivity(nxtIntent);
 
 
