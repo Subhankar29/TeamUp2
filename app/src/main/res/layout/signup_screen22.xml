@@ -20,14 +20,14 @@
         android:textSize="17dp"
         android:paddingTop="5dp"
         android:paddingLeft="10dp"
-
         android:textColor="#26a69a"
         />
 
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="300dp">
+        android:layout_height="300dp"
+        >
        <LinearLayout
            android:layout_width="match_parent"
            android:layout_height="match_parent"
@@ -36,8 +36,8 @@
            <CheckBox
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
-               android:padding="15dp"
-               android:text="CODING"
+               android:padding="10dp"
+               android:text="Coding"
                android:textColor="#616161"
                android:id="@+id/cod"
                android:textSize="25dp"/>
@@ -45,8 +45,8 @@
            <CheckBox
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
-               android:padding="15dp"
-               android:text="SPORTS"
+               android:padding="10dp"
+               android:text="Sports"
                android:id="@+id/sport"
                android:textColor="#616161"
 
@@ -55,17 +55,17 @@
            <CheckBox
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
-               android:padding="15dp"
+               android:padding="10dp"
                android:id="@+id/dnce"
-               android:text="DANCE"
+               android:text="Dance"
                android:textColor="#616161"
 
                android:textSize="25dp"/>
            <CheckBox
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
-               android:padding="15dp"
-               android:text="MUSIC"
+               android:padding="10dp"
+               android:text="Music"
                android:id="@+id/music"
                android:textColor="#616161"
 
@@ -74,11 +74,11 @@
            <CheckBox
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
-               android:padding="15dp"
+               android:padding="10dp"
                android:id="@+id/lit"
                android:textColor="#616161"
 
-               android:text="LITERARY"
+               android:text="Literary"
                android:textSize="25dp"/>
 
 
@@ -87,9 +87,9 @@
            <CheckBox
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
-               android:padding="15dp"
+               android:padding="10dp"
 
-               android:text="THEATRICS"
+               android:text="Theatrics"
                android:textColor="#616161"
 
                android:textSize="25dp"
@@ -99,8 +99,8 @@
            <CheckBox
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
-               android:padding="15dp"
-               android:text="PHOTOGRAPHY"
+               android:padding="10dp"
+               android:text="Photography"
                android:textColor="#616161"
                android:id="@+id/phto"
 
@@ -108,11 +108,11 @@
            <CheckBox
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
-               android:padding="15dp"
+               android:padding="10dp"
                android:textSize="25dp"
                android:textColor="#616161"
                android:id="@+id/misc"
-               android:text="MISCELLANEOUS"/>
+               android:text="Miscellaneous"/>
 
 
 
