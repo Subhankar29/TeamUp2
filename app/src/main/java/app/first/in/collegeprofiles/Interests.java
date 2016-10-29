@@ -2,10 +2,8 @@ package app.first.in.collegeprofiles;
 
 import android.app.Fragment;
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -26,19 +24,22 @@ import static app.first.in.collegeprofiles.R.drawable.dance;
 public class Interests extends Fragment {
 
 
-    ListView mobile_list;
-    ArrayList<Drawable> items;
-    TextView interest;
-    Adapter adapter;
-    ImageView coding;
+
 
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.interests,container,false);
+        ListView mobile_list;
+        ArrayList<Drawable> items;
+        TextView interest;
+        Adapter adapter;
+        ImageView coding;
 
 
-        mobile_list = (ListView)getView().findViewById(R.id.list_view);
+
+        mobile_list = (ListView)rootView.findViewById(R.id.list_view);
+
 
         mobile_list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -59,6 +60,7 @@ public class Interests extends Fragment {
 
 
                }
+
 
 
                /* if(items.get(position)==getResources().getDrawable(R.drawable.coding)) {
@@ -99,9 +101,11 @@ public class Interests extends Fragment {
         //});
 
 
-        adapter = new Adapter(this, 0, items);
+       adapter = new Adapter(getActivity(), 0, items);
         mobile_list.setAdapter(adapter);
+
         return rootView;
+
 
 
     }
@@ -123,7 +127,7 @@ class Adapter extends ArrayAdapter<Drawable> {
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_layout, parent, false);
         }
-        image = (ImageView) convertView.findViewById(R.id.img);
+        image = (ImageView)convertView.findViewById(R.id.img);
         image.setBackground(items.get(position));
         return convertView;
 

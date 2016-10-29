@@ -21,9 +21,7 @@
             android:label="Details"/>
         <activity android:name=".Logged"
             />
-        <activity android:name=".Tennis"
-            android:label="Tennis"/>
-        <activity android:name=".Interests" />
+
         <activity android:name=".SignupScreen22"
             android:label="Interests"
             />

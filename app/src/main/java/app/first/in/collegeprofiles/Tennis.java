@@ -1,6 +1,7 @@
 package app.first.in.collegeprofiles;
 
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -25,15 +26,15 @@ public class Tennis  extends Fragment {
 
 
 
-        people = (Button)getView().findViewById(R.id.people);
+        people = (Button)rootView.findViewById(R.id.people);
 
-        //people.setOnClickListener(new View.OnClickListener() {
-            //@Override
-            //public void onClick(View v) {
-                //Intent nxt = new Intent(Tennis.this, Tennis_People.class);
-                //startActivity(nxt);
-            //}
-        //});
+        people.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent nxt = new Intent(getActivity(), Tennis_People.class);
+                startActivity(nxt);
+            }
+        });
         return rootView;
     }
 }
