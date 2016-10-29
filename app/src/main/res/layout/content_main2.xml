@@ -12,4 +12,11 @@
     tools:context="app.first.in.collegeprofiles.MainActivity2"
     tools:showIn="@layout/app_bar_main2">
 
+
+   <FrameLayout
+       android:id="@+id/home_fragment"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+   </FrameLayout>
 </RelativeLayout>

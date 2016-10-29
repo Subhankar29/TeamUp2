@@ -1,5 +1,6 @@
 package app.first.in.collegeprofiles;
 
+import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
@@ -22,31 +23,37 @@ import static app.first.in.collegeprofiles.R.drawable.dance;
 /**
  * Created by venkateshtata on 02/10/16.
  */
-public class Interests extends AppCompatActivity {
+public class Interests extends Fragment {
 
 
     ListView mobile_list;
     ArrayList<Drawable> items;
     TextView interest;
     Adapter adapter;
-
     ImageView coding;
 
 
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.interests);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        mobile_list = (ListView) findViewById(R.id.list_view);
+        View rootView = inflater.inflate(R.layout.interests,container,false);
+
+
+        mobile_list = (ListView)getView().findViewById(R.id.list_view);
 
         mobile_list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
+                android.app.FragmentManager fn = getFragmentManager();
+
+
+
                switch ((position)){
                    case 0:
-                       Intent intent = new Intent(Interests.this, Tennis.class);
-                       startActivity(intent);
+
+                       fn.beginTransaction().replace(R.id.home_fragment, new Temp_fragment()).commit();
+                      // Intent intent = new Intent(Interests.this, Tennis.class);
+                       //startActivity(intent);
                        break;
 
 
@@ -66,6 +73,7 @@ public class Interests extends AppCompatActivity {
 
 
             }
+
         });
 
         items = new ArrayList<Drawable>() {
@@ -93,6 +101,8 @@ public class Interests extends AppCompatActivity {
 
         adapter = new Adapter(this, 0, items);
         mobile_list.setAdapter(adapter);
+        return rootView;
+
 
     }
 }
