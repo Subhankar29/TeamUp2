@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
  * Created by venkateshtata on 27/09/16.
  */
 public class Logged extends AppCompatActivity {
+    //
 
 
     @Override
