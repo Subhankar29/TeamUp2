@@ -27,7 +27,7 @@
         <item
             android:id="@+id/nav_help"
             android:icon="@drawable/nav_help"
-            android:title="help and feedback" />
+            android:title="About Us" />
     </group>
 
 

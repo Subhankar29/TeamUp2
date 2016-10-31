@@ -126,7 +126,7 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:id="@+id/btnsign"
-        android:text="sign up"
+        android:text="next"
         android:textColor="#FFF"
 
         android:background="@drawable/shape"

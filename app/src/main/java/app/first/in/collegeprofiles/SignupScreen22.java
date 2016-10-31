@@ -18,7 +18,7 @@ import com.firebase.client.Firebase;
 public class SignupScreen22 extends AppCompatActivity {
 
         CheckBox coding, sports,dance,music,literary,theatrics,misc;
-        Button signup;
+        Button next;
         Firebase ref;
 
 
@@ -41,12 +41,12 @@ public class SignupScreen22 extends AppCompatActivity {
         theatrics=(CheckBox)findViewById(R.id.ttrics);
         misc=(CheckBox)findViewById(R.id.misc);
 
-        signup=(Button)findViewById(R.id.btnsign) ;
+        next=(Button)findViewById(R.id.btnsign) ;
 
-        signup.setOnClickListener(new View.OnClickListener() {
+        next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent nxtIntent = new Intent(SignupScreen22.this, MainActivity.class);
+                Intent nxtIntent = new Intent(SignupScreen22.this, Field_Profile.class);
                 startActivity(nxtIntent);
             }
         });
