@@ -2,6 +2,7 @@ package app.first.in.collegeprofiles;
 
 import android.app.Fragment;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
@@ -55,29 +56,37 @@ public class Interests extends Fragment {
                switch ((position)){
                    case 0:
 
-                       fn.beginTransaction().replace(R.id.home_fragment, new Tennis()).commit();
-                      // Intent intent = new Intent(Interests.this, Tennis.class);
+                       Intent tennis = new Intent(getActivity(), Tennis.class);
+                       startActivity(tennis);
+
+                       // Intent intent = new Intent(Interests.this, Tennis.class);
                        //startActivity(intent);
                        break;
                    case 1:
 
-                       fn.beginTransaction().replace(R.id.home_fragment,new Dance_Interest()).commit();
+                       Intent dance = new Intent(getActivity(), Dance_Interest.class);
+                       startActivity(dance);
                        break;
                    case 2:
 
-                       fn.beginTransaction().replace(R.id.home_fragment,new Music_Interest()).commit();
+                       Intent music = new Intent(getActivity(), Music_Interest.class);
+                       startActivity(music);
                        break;
                    case 3:
-                       fn.beginTransaction().replace(R.id.home_fragment,new Coding_Interest()).commit();
+                       Intent coding = new Intent(getActivity(), Coding_Interest.class);
+                       startActivity(coding);
                        break;
                    case 4:
-                       fn.beginTransaction().replace(R.id.home_fragment,new Theatrics_Interest()).commit();
+                       Intent theatrics = new Intent(getActivity(), Theatrics_Interest.class);
+                       startActivity(theatrics);
                        break;
                    case 5:
-                       fn.beginTransaction().replace(R.id.home_fragment,new Literary_Interest()).commit();
+                       Intent literary = new Intent(getActivity(), Literary_Interest.class);
+                       startActivity(literary);
                        break;
                    case 6:
-                       fn.beginTransaction().replace(R.id.home_fragment,new Miscell_Interest()).commit();
+                       Intent miscell = new Intent(getActivity(), Miscell_Interest.class);
+                       startActivity(miscell);
                        break;
 
 

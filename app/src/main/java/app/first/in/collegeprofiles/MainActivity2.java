@@ -1,5 +1,6 @@
 package app.first.in.collegeprofiles;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -90,14 +91,18 @@ public class MainActivity2 extends AppCompatActivity
             fn.beginTransaction().replace(R.id.home_fragment, new Interests()).commit();
 
 
-        } else if (id == R.id.nav_settings) {
+        } else {
+            if (id == R.id.nav_settings) {
 
-            fn.beginTransaction().replace(R.id.home_fragment, new Tennis()).commit();
+                Intent nxtintent = new Intent(MainActivity2.this, Settings.class);
+                startActivity(nxtintent);
 
-        } else if ( id == R.id.nav_logout){
 
-        } else if ( id == R.id.nav_help){
+            } else if (id == R.id.nav_logout) {
 
+            } else if (id == R.id.nav_help) {
+
+            }
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

@@ -28,6 +28,7 @@ public class SignupScreen22 extends AppCompatActivity {
         setContentView(R.layout.signup_screen22);
 
 
+
         Firebase.setAndroidContext(this);
         ref = new Firebase("https://collegeprofiles-39288.firebaseio.com/");
 

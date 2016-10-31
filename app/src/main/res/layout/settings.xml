@@ -1,7 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/name"
+        android:scaleType="centerCrop"
+        android:id="@+id/imgprof"
+        />
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:text="Edit Profile"
+   android:textAllCaps="false"
+android:gravity="left"
+    android:id="@+id/prof"
+    android:paddingTop="10dp"
+    android:textSize="20dp"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
 
+        <ImageButton
+
+            android:scaleType="centerCrop"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imginterest"
+            android:src="@drawable/edit"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="Edit your interests"
+        android:gravity="left"
+        android:id="@+id/interest"
+        android:paddingTop="10dp"
+
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        /></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/notif"
+            android:id="@+id/imgnotif"
+            android:scaleType="centerCrop"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="left"
+        android:paddingTop="10dp"
+        android:text="Notifications"
+        android:id="@+id/notif"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+
+        /></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/imghelp"
+            android:src="@drawable/help"/>
+    <Button
+        android:layout_width="match_parent"
+        android:paddingTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="Help"
+        android:id="@+id/help"
+        android:gravity="left"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:background="?android:attr/selectableItemBackground"
+        />
+    </LinearLayout>
 </LinearLayout>

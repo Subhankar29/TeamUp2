@@ -6,7 +6,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/logo"
+        android:icon="@mipmap/ic_launcher"
         android:label="TeamUp"
 
         android:supportsRtl="true"
@@ -36,6 +36,32 @@
             android:theme="@style/AppTheme.NoActionBar"></activity>
 
 
+        <activity android:name=".Settings"
+            android:label="Settings"/>
+
+        <activity android:name=".Dance_Interest"
+            android:label="Dance"/>
+
+        <activity android:name=".Literary_Interest"
+            android:label="Literary"/>
+
+        <activity android:name=".Music_Interest"
+            android:label="Music"/>
+
+        <activity android:name=".Tennis"
+            android:label="Sports"/>
+
+        <activity android:name=".Coding_Interest"
+            android:label="Coding"/>
+
+        <activity android:name=".Miscell_Interest"
+            android:label="Miscellaneous"/>
+        <activity android:name=".Theatrics_Interest"
+        android:label="Theatrics"/>
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="MainActivity2" />
 
     </application>
 
