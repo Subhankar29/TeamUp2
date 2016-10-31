@@ -9,6 +9,8 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.Toast;
 
+import com.firebase.client.Firebase;
+
 /**
  * Created by venkateshtata on 06/10/16.
  */
@@ -17,12 +19,20 @@ public class SignupScreen22 extends AppCompatActivity {
 
         CheckBox coding, sports,dance,music,literary,theatrics,misc;
         Button signup;
+        Firebase ref;
 
 
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.signup_screen22);
+
+
+        Firebase.setAndroidContext(this);
+        ref = new Firebase("https://collegeprofiles-39288.firebaseio.com/");
+
+
+
         coding=(CheckBox)findViewById(R.id.cod);
         sports=(CheckBox)findViewById(R.id.sport);
         dance=(CheckBox)findViewById(R.id.dnce);
@@ -36,15 +46,42 @@ public class SignupScreen22 extends AppCompatActivity {
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent nxtIntent = new Intent(SignupScreen22.this, Interests.class);
+                Intent nxtIntent = new Intent(SignupScreen22.this, MainActivity.class);
+                startActivity(nxtIntent);
             }
         });
 
-        coding.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+
+
+
+
+            coding.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+
+
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if(compoundButton.isChecked())
-                Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT).show();
+                    Bundle names = getIntent().getExtras();
+                    if(names!=null) {
+                        String name = names.getString("username");
+
+
+                    if (compoundButton.isChecked()) {
+
+
+
+                        ref.child("user-interests").child("coding").child(name).setValue(name);
+
+
+                        Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT).show();
+                    }
+                }
+
+
+
+
+
+
+
 
             //*add your firebase link here*//
 
@@ -55,19 +92,44 @@ public class SignupScreen22 extends AppCompatActivity {
         sports.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if(compoundButton.isChecked())
-                Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT).show();
 
+
+                Bundle names = getIntent().getExtras();
+                if(names!=null) {
+                    String name = names.getString("username");
+
+                    if (compoundButton.isChecked()) {
+
+                        ref.child("user-interests").child("sports").child(name).setValue(name);
+
+                        Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT).show();
+                    }
+
+                }
 
             //*add your firebase link here*//
 
             }
         });
         dance.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+
+
+
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if(compoundButton.isChecked())
-                Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT).show();
+
+                Bundle names = getIntent().getExtras();
+                if(names!=null) {
+                    String name = names.getString("username");
+
+                    if (compoundButton.isChecked()) {
+                        ref.child("user-interests").child("dance").child(name).setValue(name);
+
+                        Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT).show();
+
+
+                    }
+                }
 
 
             //*add your firebase link here*//
@@ -77,8 +139,19 @@ public class SignupScreen22 extends AppCompatActivity {
         music.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if(compoundButton.isChecked())
-                Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT).show();
+                Bundle names = getIntent().getExtras();
+                if(names!=null) {
+                    String name = names.getString("username");
+
+
+                    if (compoundButton.isChecked()) {
+
+                        ref.child("user-interests").child("music").child(name).setValue(name);
+
+                        Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT).show();
+
+                    }
+                }
 
              //*add your firebase link here*//
 
@@ -88,8 +161,15 @@ public class SignupScreen22 extends AppCompatActivity {
         literary.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if(compoundButton.isChecked())
-                Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT).show();
+                Bundle names = getIntent().getExtras();
+                if(names!=null) {
+                    String name = names.getString("username");
+
+
+                    if (compoundButton.isChecked()) {
+                        Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT).show();
+                    }
+                }
 
 
             //*add your firebase link here*//
@@ -99,8 +179,20 @@ public class SignupScreen22 extends AppCompatActivity {
         theatrics.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if(compoundButton.isChecked())
-                Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT).show();
+
+                Bundle names = getIntent().getExtras();
+                if(names!=null) {
+                    String name = names.getString("username");
+
+
+                    if (compoundButton.isChecked()) {
+
+                        ref.child("user-interests").child("theatrics").child(name).setValue(name);
+
+
+                        Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT).show();
+                    }
+                }
 
             //*add your firebase link here*//
 
@@ -110,8 +202,20 @@ public class SignupScreen22 extends AppCompatActivity {
         misc.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if(compoundButton.isChecked())
-                Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT).show();
+
+                Bundle names = getIntent().getExtras();
+                if(names!=null) {
+                    String name = names.getString("username");
+
+
+                    if (compoundButton.isChecked()) {
+
+                        ref.child("user-interests").child("misc").child(name).setValue(name);
+
+                        Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT).show();
+
+                    }
+                }
 
           //*add your firebase link here*//
 

@@ -94,6 +94,7 @@ public class SignupScreen extends AppCompatActivity {
                     });
                     PD.dismiss();
                     Intent nxtIntent = new Intent(SignupScreen.this, SignupScreen22.class);
+                    nxtIntent.putExtra("username",name);
                     startActivity(nxtIntent);
                 }
 

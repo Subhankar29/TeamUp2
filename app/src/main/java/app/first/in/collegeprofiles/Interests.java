@@ -52,7 +52,7 @@ public class Interests extends Fragment {
                switch ((position)){
                    case 0:
 
-                       fn.beginTransaction().replace(R.id.home_fragment, new Temp_fragment()).commit();
+                       fn.beginTransaction().replace(R.id.home_fragment, new Tennis()).commit();
                       // Intent intent = new Intent(Interests.this, Tennis.class);
                        //startActivity(intent);
                        break;
@@ -80,7 +80,7 @@ public class Interests extends Fragment {
 
         items = new ArrayList<Drawable>() {
         };
-        items.add(getResources().getDrawable(R.drawable.coding));
+        items.add(getResources().getDrawable(R.drawable.t));
         items.add(getResources().getDrawable(dance));
         items.add(getResources().getDrawable(R.drawable.coding));
         items.add(getResources().getDrawable(dance));
