@@ -18,7 +18,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".SignupScreen"
-            android:label="Details"/>
+            android:label="Details"
+            />
         <activity android:name=".Logged"
             />
 
@@ -30,6 +31,8 @@
             android:name=".MainActivity2"
             android:label="Wall"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+
+
 
     </application>
 

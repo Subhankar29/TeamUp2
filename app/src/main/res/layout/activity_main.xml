@@ -89,7 +89,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/btnsup"
         android:text="SIGN UP"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        />
 
 </LinearLayout>
 

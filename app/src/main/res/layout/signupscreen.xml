@@ -165,6 +165,7 @@
             android:id="@+id/btnnext"
             android:text="next"
             android:textColor="#FFFFFF"
+            android:alpha="2"
             android:layout_gravity="center"
             android:background="#FF050E49"/>
     </LinearLayout>

@@ -16,7 +16,10 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import static app.first.in.collegeprofiles.R.drawable.coding;
 import static app.first.in.collegeprofiles.R.drawable.dance;
+import static app.first.in.collegeprofiles.R.drawable.misc;
+import static app.first.in.collegeprofiles.R.drawable.theatrics;
 
 /**
  * Created by venkateshtata on 02/10/16.
@@ -56,6 +59,26 @@ public class Interests extends Fragment {
                       // Intent intent = new Intent(Interests.this, Tennis.class);
                        //startActivity(intent);
                        break;
+                   case 1:
+
+                       fn.beginTransaction().replace(R.id.home_fragment,new Dance_Interest()).commit();
+                       break;
+                   case 2:
+
+                       fn.beginTransaction().replace(R.id.home_fragment,new Music_Interest()).commit();
+                       break;
+                   case 3:
+                       fn.beginTransaction().replace(R.id.home_fragment,new Coding_Interest()).commit();
+                       break;
+                   case 4:
+                       fn.beginTransaction().replace(R.id.home_fragment,new Theatrics_Interest()).commit();
+                       break;
+                   case 5:
+                       fn.beginTransaction().replace(R.id.home_fragment,new Literary_Interest()).commit();
+                       break;
+                   case 6:
+                       fn.beginTransaction().replace(R.id.home_fragment,new Miscell_Interest()).commit();
+                       break;
 
 
 
@@ -80,14 +103,15 @@ public class Interests extends Fragment {
 
         items = new ArrayList<Drawable>() {
         };
-        items.add(getResources().getDrawable(R.drawable.t));
+        items.add(getResources().getDrawable(R.drawable.sports));
         items.add(getResources().getDrawable(dance));
+        items.add(getResources().getDrawable(R.drawable.music));
+
         items.add(getResources().getDrawable(R.drawable.coding));
-        items.add(getResources().getDrawable(dance));
-        items.add(getResources().getDrawable(R.drawable.coding));
-        items.add(getResources().getDrawable(dance));
-        items.add(getResources().getDrawable(R.drawable.coding));
-        items.add(getResources().getDrawable(dance));
+        items.add(getResources().getDrawable(theatrics));
+
+        items.add(getResources().getDrawable(R.drawable.literary));
+        items.add(getResources().getDrawable(misc));
 
 
         //coding = (ImageView)findViewById(R.drawable.coding);
