@@ -12,7 +12,7 @@
         android:id="@+id/people"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="These are the people excited in tennis with you !"/>
+        android:text="These are the people interested in Sports with you !"/>
 
 
     <ListView
