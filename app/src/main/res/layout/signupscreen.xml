@@ -164,10 +164,13 @@
             android:layout_height="wrap_content"
             android:id="@+id/btnnext"
             android:text="next"
-            android:textColor="#FFFFFF"
+            android:textColor="#FFF"
+
+            android:background="@drawable/shape"
+
             android:alpha="2"
             android:layout_gravity="center"
-            android:background="#FF050E49"/>
+            />
     </LinearLayout>
 </ScrollView>
 

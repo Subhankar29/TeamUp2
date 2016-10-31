@@ -5,11 +5,13 @@
         <item
             android:id="@+id/nav_wall"
             android:icon="@drawable/nav_wall"
-            android:title="My Wall" />
+            android:title="My Wall"
+           />
         <item
             android:id="@+id/nav_people"
             android:icon="@drawable/nav_people"
-            android:title="People with me" />
+            android:title="People with me"
+            />
         <item
             android:id="@+id/nav_interests"
             android:icon="@drawable/nav_interests"
