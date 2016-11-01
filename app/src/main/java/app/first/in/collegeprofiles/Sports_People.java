@@ -37,6 +37,7 @@ public class Sports_People extends AppCompatActivity {
 
         mPeopleList = (ListView) findViewById(R.id.mPeopleList);
         people = (TextView) findViewById(R.id.people);
+        //
     }
 
     @Override
