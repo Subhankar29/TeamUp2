@@ -81,6 +81,7 @@ public class MainActivity2 extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_wall) {
+
             // Handle the camera action
         } else if (id == R.id.nav_people) {
 

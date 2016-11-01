@@ -19,6 +19,7 @@ import java.util.ArrayList;
 
 import static app.first.in.collegeprofiles.R.drawable.dance;
 import static app.first.in.collegeprofiles.R.drawable.misc;
+import static app.first.in.collegeprofiles.R.drawable.photo;
 import static app.first.in.collegeprofiles.R.drawable.theatrics;
 
 /**
@@ -48,7 +49,7 @@ public class Interests extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                android.app.FragmentManager fn = getFragmentManager();
+                              android.app.FragmentManager fn = getFragmentManager();
 
 
 
@@ -84,7 +85,11 @@ public class Interests extends Fragment {
                        startActivity(literary);
                        break;
                    case 6:
-                       Intent miscell = new Intent(getActivity(), Miscell_Interest.class);
+                       Intent photo = new Intent(getActivity(), Photo_Interest.class);
+                       startActivity(photo);
+                       break;
+                   case 7:
+                       Intent miscell=new Intent(getActivity(), Miscell_Interest.class);
                        startActivity(miscell);
                        break;
 
@@ -112,14 +117,16 @@ public class Interests extends Fragment {
         items = new ArrayList<Drawable>() {
         };
         items.add(getResources().getDrawable(R.drawable.sports));
-        items.add(getResources().getDrawable(dance));
+        items.add(getResources().getDrawable(R.drawable.dance));
         items.add(getResources().getDrawable(R.drawable.music));
 
         items.add(getResources().getDrawable(R.drawable.coding));
-        items.add(getResources().getDrawable(theatrics));
+        items.add(getResources().getDrawable(R.drawable.theatrics));
 
         items.add(getResources().getDrawable(R.drawable.literary));
-        items.add(getResources().getDrawable(misc));
+        items.add(getResources().getDrawable(R.drawable.photo));
+        items.add(getResources().getDrawable(R.drawable.misc));
+
 
 
         //coding = (ImageView)findViewById(R.drawable.coding);
@@ -164,5 +171,7 @@ class Adapter extends ArrayAdapter<Drawable> {
         return convertView;
 
     }
+
+
 
 }
