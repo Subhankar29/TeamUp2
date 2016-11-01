@@ -101,7 +101,7 @@ public class SignupScreen22 extends AppCompatActivity {
 
                     if (compoundButton.isChecked()) {
 
-                        ref.child("user-interests").child("sports").child(name).setValue(name);
+                        ref.child("user-interests").child("sports").push().setValue(name);
 
                         Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT).show();
                     }
@@ -124,7 +124,7 @@ public class SignupScreen22 extends AppCompatActivity {
                     String name = names.getString("username");
 
                     if (compoundButton.isChecked()) {
-                        ref.child("user-interests").child("dance").child(name).setValue(name);
+                        ref.child("user-interests").child("dance").push().setValue(name);
 
                         Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT).show();
 
@@ -147,7 +147,7 @@ public class SignupScreen22 extends AppCompatActivity {
 
                     if (compoundButton.isChecked()) {
 
-                        ref.child("user-interests").child("music").child(name).setValue(name);
+                        ref.child("user-interests").child("music").push().setValue(name);
 
                         Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT).show();
 
@@ -168,6 +168,9 @@ public class SignupScreen22 extends AppCompatActivity {
 
 
                     if (compoundButton.isChecked()) {
+
+                        ref.child("user-interests").child("literary").push().setValue(name);
+
                         Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT).show();
                     }
                 }
@@ -188,7 +191,7 @@ public class SignupScreen22 extends AppCompatActivity {
 
                     if (compoundButton.isChecked()) {
 
-                        ref.child("user-interests").child("theatrics").child(name).setValue(name);
+                        ref.child("user-interests").child("theatrics").push().setValue(name);
 
 
                         Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT).show();
@@ -211,7 +214,7 @@ public class SignupScreen22 extends AppCompatActivity {
 
                     if (compoundButton.isChecked()) {
 
-                        ref.child("user-interests").child("misc").child(name).setValue(name);
+                        ref.child("user-interests").child("misc").push().setValue(name);
 
                         Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT).show();
 
