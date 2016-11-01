@@ -2,6 +2,7 @@ package app.first.in.collegeprofiles;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -85,7 +86,16 @@ public class SignupScreen22 extends AppCompatActivity {
                         ref.child("user-interests").child("coding").child(name).setValue(name);
 
 
-                        Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT).show();
+                        final Toast toast = Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT);
+                        toast.show();
+
+                        Handler handler = new Handler();
+                        handler.postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                toast.cancel();
+                            }
+                        }, 500);
                     }
                 }
             }
@@ -107,7 +117,16 @@ public class SignupScreen22 extends AppCompatActivity {
                         ref.child("user-interests").child("photography").child(name).setValue(name);
 
 
-                        Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT).show();
+                        final Toast toast = Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT);
+                        toast.show();
+
+                        Handler handler = new Handler();
+                        handler.postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                toast.cancel();
+                            }
+                        }, 500);
                     }
                 }
             }
@@ -127,7 +146,16 @@ public class SignupScreen22 extends AppCompatActivity {
 
                         ref.child("user-interests").child("sports").child(name).setValue(name);
 
-                        Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT).show();
+                        final Toast toast = Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT);
+                        toast.show();
+
+                        Handler handler = new Handler();
+                        handler.postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                toast.cancel();
+                            }
+                        }, 500);
                     }
 
                 }
@@ -150,7 +178,16 @@ public class SignupScreen22 extends AppCompatActivity {
                     if (compoundButton.isChecked()) {
                         ref.child("user-interests").child("dance").child(name).setValue(name);
 
-                        Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT).show();
+                        final Toast toast = Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT);
+                        toast.show();
+
+                        Handler handler = new Handler();
+                        handler.postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                toast.cancel();
+                            }
+                        }, 500);
 
 
                     }
@@ -173,7 +210,16 @@ public class SignupScreen22 extends AppCompatActivity {
 
                         ref.child("user-interests").child("music").child(name).setValue(name);
 
-                        Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT).show();
+                        final Toast toast = Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT);
+                        toast.show();
+
+                        Handler handler = new Handler();
+                        handler.postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                toast.cancel();
+                            }
+                        }, 500);
 
                     }
                 }
@@ -195,7 +241,16 @@ public class SignupScreen22 extends AppCompatActivity {
 
                         ref.child("user-interests").child("literary").child(name).setValue(name);
 
-                        Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT).show();
+                        final Toast toast = Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT);
+                        toast.show();
+
+                        Handler handler = new Handler();
+                        handler.postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                toast.cancel();
+                            }
+                        }, 500);
                     }
                 }
 
@@ -218,7 +273,16 @@ public class SignupScreen22 extends AppCompatActivity {
                         ref.child("user-interests").child("theatrics").child(name).setValue(name);
 
 
-                        Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT).show();
+                        final Toast toast = Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT);
+                        toast.show();
+
+                        Handler handler = new Handler();
+                        handler.postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                toast.cancel();
+                            }
+                        }, 500);
                     }
                 }
 
@@ -239,7 +303,16 @@ public class SignupScreen22 extends AppCompatActivity {
                     if (compoundButton.isChecked()) {
 
                         ref.child("user-interests").child("misc").child(name).setValue(name);
-                        Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT).show();
+                        final Toast toast = Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT);
+                        toast.show();
+
+                        Handler handler = new Handler();
+                        handler.postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                toast.cancel();
+                            }
+                        }, 500);
 
                     }
                 }

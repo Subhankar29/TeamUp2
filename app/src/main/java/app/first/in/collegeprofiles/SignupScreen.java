@@ -20,7 +20,7 @@ import com.firebase.client.FirebaseError;
  */
 public class SignupScreen extends AppCompatActivity {
 
-    EditText etname, etusername, etemail, etphone, edtpass;
+    EditText etname, etusername, etemail, etphone,etpass, edtpass;
     Button btnsignup;
     Firebase ref;
     ProgressDialog PD;
@@ -47,6 +47,7 @@ public class SignupScreen extends AppCompatActivity {
         etemail = (EditText)findViewById(R.id.etemail);
         etphone = (EditText)findViewById(R.id.etPhone);
         edtpass = (EditText)findViewById(R.id.edtpass);
+        etpass = (EditText)findViewById(R.id.etpass);
         btnsignup = (Button)findViewById(R.id.btnnext);
 
 
@@ -59,6 +60,7 @@ public class SignupScreen extends AppCompatActivity {
                 String email = etemail.getText().toString().trim();
                 String phone = etphone.getText().toString().trim();
                 String password = edtpass.getText().toString().trim();
+                String conpass=etpass.getText().toString().trim();
 
 
 
@@ -75,6 +77,8 @@ public class SignupScreen extends AppCompatActivity {
                         }
                     }, 500);
                 }else {
+
+
                     PD.show();
 
 
@@ -110,6 +114,20 @@ public class SignupScreen extends AppCompatActivity {
 
                         }
                     });
+
+                    if(etpass.getText().toString()!= edtpass.getText().toString() ){
+                        final Toast toast = Toast.makeText(getApplicationContext(), "Oops!Passwords don't match!", Toast.LENGTH_SHORT);
+                        toast.show();
+
+                        Handler handler = new Handler();
+                        handler.postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                toast.cancel();
+                            }
+                        }, 500);
+
+                    }
                     PD.dismiss();
                     Intent nxtIntent = new Intent(SignupScreen.this, SignupScreen22.class);
                     nxtIntent.putExtra("username",name);
