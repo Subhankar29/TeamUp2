@@ -15,7 +15,7 @@ import java.util.ArrayList;
  * Created by venkateshtata on 01/11/16.
  */
 
-public class Miscell_people extends AppCompatActivity {
+public class Photo_People extends AppCompatActivity {
 
     ListView mPeopleList;
     TextView people;
@@ -27,7 +27,7 @@ public class Miscell_people extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.miscell_people);
+        setContentView(R.layout.photo_people);
 
 
         Firebase.setAndroidContext(this);

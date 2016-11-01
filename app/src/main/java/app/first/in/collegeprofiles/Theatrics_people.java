@@ -29,7 +29,7 @@ public class Theatrics_people  extends AppCompatActivity{
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.coding_people);
+        setContentView(R.layout.theatrics_people);
 
 
         Firebase.setAndroidContext(this);

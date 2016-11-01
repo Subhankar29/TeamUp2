@@ -32,8 +32,6 @@
 
 
 
-        <activity android:name=".Sports_interest" />
-        <activity android:name=".Sports_People" />
 
         <activity
             android:name=".MainActivity2"
@@ -44,43 +42,60 @@
         <activity android:name=".Settings"
             android:label="Settings"/>
 
+
+
+        <activity android:name=".Sports_interest"
+            android:label="Sports"/>
+        <activity android:name=".Sports_People"
+            android:label="People"/>
+
+
         <activity android:name=".Dance_Interest"
             android:label="Dance"/>
-        <activity android:name=".Dance_people" />
-
-
-
-
-        <activity android:name=".Literary_Interest"/>
-        <activity android:name=".Literary_people" />
-
-
+        <activity android:name=".Dance_people"
+            android:label="People"/>
 
 
 
         <activity android:name=".Music_Interest"
             android:label="Music"/>
-        <activity android:name=".Music_people" />
+        <activity android:name=".Music_people"
+            android:label="People"/>
 
 
 
         <activity android:name=".Coding_Interest"
             android:label="Coding"/>
-        <activity android:name=".Coding_people" />
+        <activity android:name=".Coding_people"
+            android:label="People"/>
 
 
+        <activity android:name=".Literary_Interest"
+            android:label="Literary"/>
+        <activity android:name=".Literary_people"
+            android:label="People"/>
 
 
-        <activity android:name=".Miscell_Interest"
-            android:label="Miscellaneous"/>
-        <activity android:name=".Miscell_people" />
-
+        <activity android:name=".Photo_Interest"
+            android:label="Photography"/>
+        <activity android:name=".Photo_People"
+            android:label="People"/>
 
 
 
         <activity android:name=".Theatrics_Interest"
         android:label="Theatrics"/>
-        <activity android:name=".Theatrics_people" />
+        <activity android:name=".Theatrics_people"
+            android:label="People"/>
+
+
+        <activity android:name=".Miscell_Interest"
+        android:label="Miscellaneous"/>
+        <activity android:name=".Miscell_people"
+            android:label="People"/>
+
+
+
 
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
