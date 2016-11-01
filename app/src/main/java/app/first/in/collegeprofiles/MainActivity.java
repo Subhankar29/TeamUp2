@@ -3,6 +3,7 @@ package app.first.in.collegeprofiles;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -50,7 +51,16 @@ public class MainActivity extends AppCompatActivity {
                final String password = edt_password.getText().toString().trim();
 
                 if (username.isEmpty()||password.isEmpty()){
-                    Toast.makeText(getApplicationContext(), "Complete the above details", Toast.LENGTH_LONG).show();
+                    final Toast toast = Toast.makeText(getApplicationContext(), "Please fill all details", Toast.LENGTH_SHORT);
+                    toast.show();
+
+                    Handler handler = new Handler();
+                    handler.postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            toast.cancel();
+                        }
+                    }, 500);
 
                 }
                 else {

@@ -64,7 +64,7 @@ public class SignupScreen extends AppCompatActivity {
 
 
                 if (name.isEmpty()||username.isEmpty()||email.isEmpty()||phone.isEmpty()||password.isEmpty()) {
-                    final Toast toast = Toast.makeText(getApplicationContext(), "The following message will disappear in half second", Toast.LENGTH_SHORT);
+                    final Toast toast = Toast.makeText(getApplicationContext(), "Please fill all details", Toast.LENGTH_SHORT);
                     toast.show();
 
                     Handler handler = new Handler();
