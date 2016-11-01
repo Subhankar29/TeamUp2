@@ -112,7 +112,7 @@ public class Interests extends Fragment {
         items = new ArrayList<Drawable>() {
         };
         items.add(getResources().getDrawable(R.drawable.sports2));
-        items.add(getResources().getDrawable(R.drawable.dance2));
+        items.add(getResources().getDrawable(R.drawable.dance));
         items.add(getResources().getDrawable(R.drawable.music2));
 
         items.add(getResources().getDrawable(R.drawable.coding));

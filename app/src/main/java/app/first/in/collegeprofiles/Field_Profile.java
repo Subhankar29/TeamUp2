@@ -5,8 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-
-import com.firebase.client.Firebase;
+import android.widget.EditText;
 
 /**
  * Created by USER on 10/31/2016.
@@ -15,6 +14,8 @@ import com.firebase.client.Firebase;
 public class Field_Profile extends AppCompatActivity {
 
     Button signup;
+
+    EditText discription;
 
 
     protected void onCreate(Bundle savedInstanceState) {

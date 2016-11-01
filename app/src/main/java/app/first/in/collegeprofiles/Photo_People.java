@@ -42,7 +42,7 @@ public class Photo_People extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 
-        Firebase messagesRef = Ref.child("user-interests").child("misc");
+        Firebase messagesRef = Ref.child("user-interests").child("photography");
         final FirebaseListAdapter<String> adapter = new FirebaseListAdapter<String>(this, String.class, android.R.layout.simple_list_item_1, messagesRef) {
             @Override
             protected void populateView(View view, String s, int i) {

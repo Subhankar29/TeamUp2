@@ -17,7 +17,7 @@ import com.firebase.client.Firebase;
 
 public class SignupScreen22 extends AppCompatActivity {
 
-        CheckBox coding, sports,dance,music,literary,theatrics,misc;
+        CheckBox coding, sports,dance,music,literary,theatrics,misc,photography;
         Button next;
         Firebase ref;
 
@@ -35,6 +35,7 @@ public class SignupScreen22 extends AppCompatActivity {
 
 
         coding=(CheckBox)findViewById(R.id.cod);
+        photography = (CheckBox)findViewById(R.id.phto);
         sports=(CheckBox)findViewById(R.id.sport);
         dance=(CheckBox)findViewById(R.id.dnce);
         music=(CheckBox)findViewById(R.id.music);
@@ -76,19 +77,31 @@ public class SignupScreen22 extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT).show();
                     }
                 }
-
-
-
-
-
-
-
-
-            //*add your firebase link here*//
-
-
             }
         });
+        photography.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+
+
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                Bundle names = getIntent().getExtras();
+                if(names!=null) {
+                    String name = names.getString("username");
+
+
+                    if (compoundButton.isChecked()) {
+
+
+
+                        ref.child("user-interests").child("photography").child(name).setValue(name);
+
+
+                        Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            }
+        });
+
 
         sports.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override

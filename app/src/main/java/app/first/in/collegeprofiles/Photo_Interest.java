@@ -20,7 +20,7 @@ public class Photo_Interest extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.music_interest);
+        setContentView(R.layout.photo_interest);
 
 
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
@@ -33,7 +33,7 @@ public class Photo_Interest extends AppCompatActivity {
         people.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent nxtIntent = new Intent(Photo_Interest.this, Music_people.class);
+                Intent nxtIntent = new Intent(Photo_Interest.this, Photo_People.class);
                 startActivity(nxtIntent);
             }
         });
