@@ -17,10 +17,6 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import static app.first.in.collegeprofiles.R.drawable.dance;
-import static app.first.in.collegeprofiles.R.drawable.misc;
-import static app.first.in.collegeprofiles.R.drawable.theatrics;
-
 /**
  * Created by venkateshtata on 02/10/16.
  */
@@ -111,15 +107,15 @@ public class Interests extends Fragment {
 
         items = new ArrayList<Drawable>() {
         };
-        items.add(getResources().getDrawable(R.drawable.sports));
-        items.add(getResources().getDrawable(dance));
-        items.add(getResources().getDrawable(R.drawable.music));
+        items.add(getResources().getDrawable(R.drawable.sports2));
+        items.add(getResources().getDrawable(R.drawable.dance2));
+        items.add(getResources().getDrawable(R.drawable.music2));
 
         items.add(getResources().getDrawable(R.drawable.coding));
-        items.add(getResources().getDrawable(theatrics));
+        items.add(getResources().getDrawable(R.drawable.theatrics2));
 
-        items.add(getResources().getDrawable(R.drawable.literary));
-        items.add(getResources().getDrawable(misc));
+        items.add(getResources().getDrawable(R.drawable.literary2));
+        items.add(getResources().getDrawable(R.drawable.misc2));
 
 
         //coding = (ImageView)findViewById(R.drawable.coding);

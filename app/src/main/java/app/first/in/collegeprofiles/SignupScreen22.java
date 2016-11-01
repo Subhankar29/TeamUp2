@@ -211,7 +211,7 @@ public class SignupScreen22 extends AppCompatActivity {
 
                     if (compoundButton.isChecked()) {
 
-                        ref.child("user-interests").child("misc").child(name).setValue(name);
+                        ref.child("user-interests").child("misc").push().setValue(name);
 
                         Toast.makeText(getApplicationContext(), "Added to Interests!", Toast.LENGTH_SHORT).show();
 
