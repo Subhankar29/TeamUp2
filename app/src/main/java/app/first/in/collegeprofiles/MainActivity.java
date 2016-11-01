@@ -46,15 +46,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                if (edt_username.equals(null)||edt_password.equals(null)) {
+               final String username = edt_username.getText().toString().trim();
+               final String password = edt_password.getText().toString().trim();
+
+                if (username.isEmpty()||password.isEmpty()){
                     Toast.makeText(getApplicationContext(), "Complete the above details", Toast.LENGTH_LONG).show();
-                } else {
+
+                }
+                else {
 
                     PD.show();
 
 
-                    final String username = edt_username.getText().toString().trim();
-                    final String password = edt_password.getText().toString().trim();
 
 
                     ref.addValueEventListener(new ValueEventListener() {

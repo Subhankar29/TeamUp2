@@ -48,20 +48,24 @@ public class SignupScreen extends AppCompatActivity {
         btnsignup = (Button)findViewById(R.id.btnnext);
 
 
+
         btnsignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String name = etname.getText().toString().trim();
+                String username = etusername.getText().toString().trim();
+                String email = etemail.getText().toString().trim();
+                String phone = etphone.getText().toString().trim();
+                String password = edtpass.getText().toString().trim();
 
-                if (etname==null) {
+
+
+
+                if (name.isEmpty()||username.isEmpty()||email.isEmpty()||phone.isEmpty()||password.isEmpty()) {
                     Toast.makeText(getApplicationContext(), "Please fill all the details",Toast.LENGTH_LONG).show();
                 }else {
                     PD.show();
 
-                    String name = etname.getText().toString().trim();
-                    String username = etusername.getText().toString();
-                    String email = etemail.getText().toString();
-                    String phone = etphone.getText().toString();
-                    String password = edtpass.getText().toString();
 
                     ref.child("user_accounts").child(username).child("username").setValue(username, new Firebase.CompletionListener() {
                         @Override
