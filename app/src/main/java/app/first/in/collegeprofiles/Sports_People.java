@@ -15,7 +15,7 @@ import java.util.ArrayList;
  * Created by venkateshtata on 06/10/16.
  */
 
-public class Tennis_People extends AppCompatActivity {
+public class Sports_People extends AppCompatActivity {
 
     ListView mPeopleList;
     TextView people;
@@ -27,7 +27,7 @@ public class Tennis_People extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.tennis_people);
+        setContentView(R.layout.sports_people);
 
 
         Firebase.setAndroidContext(this);
@@ -49,7 +49,7 @@ public class Tennis_People extends AppCompatActivity {
             @Override
             protected void populateView(View view, String s, int i) {
 
-                TextView textView = (TextView) view.findViewById(android.R.id.text1);
+                TextView textView = (TextView)view.findViewById(android.R.id.text1);
                 textView.setText(s);
 
 

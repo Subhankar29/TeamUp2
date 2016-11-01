@@ -87,30 +87,6 @@
 
     <Button
 
-        android:text="Find people"
-
-        android:layout_width="175dp"
-
-        android:layout_height="50dp"
-
-        android:id="@+id/people"
-
-        android:background="@drawable/shape"
-
-        android:textColor="#FFF"
-
-
-        android:layout_below="@+id/butchat"
-
-        android:layout_alignLeft="@+id/butchat"
-
-        android:layout_alignStart="@+id/butchat"
-
-        android:layout_marginTop="19dp" />
-
-
-    <Button
-
         android:text="wall"
 
         android:layout_width="175dp"
@@ -147,6 +123,25 @@
 
         android:layout_alignTop="@+id/butfol" />
 
+    <Button
+
+        android:text="Find people"
+
+        android:layout_width="175dp"
+
+        android:layout_height="50dp"
+
+        android:id="@+id/people"
+
+        android:background="@drawable/shape"
+
+        android:textColor="#FFF"
+
+
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/butchat"
+        android:layout_alignLeft="@+id/butchat"
+        android:layout_alignStart="@+id/butchat" />
 
 
 </RelativeLayout>

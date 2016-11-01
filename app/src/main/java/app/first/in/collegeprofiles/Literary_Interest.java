@@ -1,13 +1,18 @@
 package app.first.in.collegeprofiles;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 public class Literary_Interest extends AppCompatActivity {
 
     MenuItem item;
+
+    Button people;
 
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +25,17 @@ public class Literary_Interest extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
 
 
+        people =(Button)findViewById(R.id.people);
+
+        people.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent nxtIntent = new Intent(Literary_Interest.this, Literary_people.class);
+                startActivity(nxtIntent);
+            }
+        });
+
+
 
     }
     @Override
@@ -28,6 +44,8 @@ public class Literary_Interest extends AppCompatActivity {
             case android.R.id.home:
                 //Write your logic here
                 this.finish();
+
+
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

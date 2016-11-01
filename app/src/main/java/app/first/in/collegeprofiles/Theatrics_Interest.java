@@ -1,14 +1,17 @@
 package app.first.in.collegeprofiles;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
-
-import app.first.in.collegeprofiles.R;
+import android.view.View;
+import android.widget.Button;
 
 public class Theatrics_Interest extends AppCompatActivity {
 
     MenuItem item;
+
+    Button people;
 
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +22,16 @@ public class Theatrics_Interest extends AppCompatActivity {
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         actionBar.setHomeButtonEnabled(true);
         actionBar.setDisplayHomeAsUpEnabled(true);
+
+        people = (Button)findViewById(R.id.people);
+
+        people.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent nxtIntent = new Intent(Theatrics_Interest.this, Theatrics_people.class);
+                startActivity(nxtIntent);
+            }
+        });
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

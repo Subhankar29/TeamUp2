@@ -7,16 +7,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-import app.first.in.collegeprofiles.R;
-
-public class Tennis extends AppCompatActivity {
+public class Sports_interest extends AppCompatActivity {
 
     MenuItem item;
 
     Button people;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.tennis_interest);
+        setContentView(R.layout.sports_interest);
 
 
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
@@ -27,7 +25,7 @@ public class Tennis extends AppCompatActivity {
         people.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent nxtIntent = new Intent(Tennis.this, Field_Profile.class);
+                Intent nxtIntent = new Intent(Sports_interest.this, Sports_People.class);
                 startActivity(nxtIntent);
             }
         });

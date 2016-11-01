@@ -29,7 +29,12 @@
         <activity android:name=".SignupScreen22"
             android:label="Interests"
             />
-        <activity android:name=".Tennis_People" />
+
+
+
+        <activity android:name=".Sports_interest" />
+        <activity android:name=".Sports_People" />
+
         <activity
             android:name=".MainActivity2"
             android:label="Teamup"
@@ -41,23 +46,41 @@
 
         <activity android:name=".Dance_Interest"
             android:label="Dance"/>
+        <activity android:name=".Dance_people" />
 
-        <activity android:name=".Literary_Interest"
-            android:label="Literary"/>
+
+
+
+        <activity android:name=".Literary_Interest"/>
+        <activity android:name=".Literary_people" />
+
+
+
+
 
         <activity android:name=".Music_Interest"
             android:label="Music"/>
+        <activity android:name=".Music_people" />
 
-        <activity android:name=".Tennis"
-            android:label="Sports"/>
+
 
         <activity android:name=".Coding_Interest"
             android:label="Coding"/>
+        <activity android:name=".Coding_people" />
+
+
+
 
         <activity android:name=".Miscell_Interest"
             android:label="Miscellaneous"/>
+        <activity android:name=".Miscell_people" />
+
+
+
+
         <activity android:name=".Theatrics_Interest"
         android:label="Theatrics"/>
+        <activity android:name=".Theatrics_people" />
 
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"

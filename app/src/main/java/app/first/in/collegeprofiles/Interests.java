@@ -17,7 +17,6 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import static app.first.in.collegeprofiles.R.drawable.coding;
 import static app.first.in.collegeprofiles.R.drawable.dance;
 import static app.first.in.collegeprofiles.R.drawable.misc;
 import static app.first.in.collegeprofiles.R.drawable.theatrics;
@@ -56,7 +55,7 @@ public class Interests extends Fragment {
                switch ((position)){
                    case 0:
 
-                       Intent tennis = new Intent(getActivity(), Tennis.class);
+                       Intent tennis = new Intent(getActivity(), Sports_interest.class);
                        startActivity(tennis);
 
                        // Intent intent = new Intent(Interests.this, Tennis.class);
