@@ -80,7 +80,11 @@ public class Interests extends Fragment {
                        startActivity(literary);
                        break;
                    case 6:
-                       Intent miscell = new Intent(getActivity(), Miscell_Interest.class);
+                       Intent photo = new Intent(getActivity(), Photo_Interest.class);
+                       startActivity(photo);
+                       break;
+                   case 7:
+                       Intent miscell= new Intent(getActivity(),Miscell_Interest.class);
                        startActivity(miscell);
                        break;
 
@@ -115,6 +119,7 @@ public class Interests extends Fragment {
         items.add(getResources().getDrawable(R.drawable.theatrics2));
 
         items.add(getResources().getDrawable(R.drawable.literary2));
+        items.add(getResources().getDrawable(R.drawable.photo));
         items.add(getResources().getDrawable(R.drawable.misc2));
 
 
