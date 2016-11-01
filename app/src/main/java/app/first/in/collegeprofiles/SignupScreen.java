@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.os.Handler;
+
 
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
@@ -62,7 +64,16 @@ public class SignupScreen extends AppCompatActivity {
 
 
                 if (name.isEmpty()||username.isEmpty()||email.isEmpty()||phone.isEmpty()||password.isEmpty()) {
-                    Toast.makeText(getApplicationContext(), "Please fill all the details",Toast.LENGTH_LONG).show();
+                    final Toast toast = Toast.makeText(getApplicationContext(), "The following message will disappear in half second", Toast.LENGTH_SHORT);
+                    toast.show();
+
+                    Handler handler = new Handler();
+                    handler.postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            toast.cancel();
+                        }
+                    }, 500);
                 }else {
                     PD.show();
 
