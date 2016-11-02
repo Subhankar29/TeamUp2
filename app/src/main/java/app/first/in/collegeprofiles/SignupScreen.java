@@ -20,7 +20,7 @@ import com.firebase.client.FirebaseError;
  */
 public class SignupScreen extends AppCompatActivity {
 
-    EditText etname, etusername, etemail, etphone,etpass, edtpass;
+    EditText etname, etusername, etemail, etphone,etpass,etusername2, edtpass;
     Button btnsignup;
     Firebase ref;
     ProgressDialog PD;
@@ -47,7 +47,7 @@ public class SignupScreen extends AppCompatActivity {
         etemail = (EditText)findViewById(R.id.etemail);
         etphone = (EditText)findViewById(R.id.etPhone);
         edtpass = (EditText)findViewById(R.id.edtpass);
-        etpass = (EditText)findViewById(R.id.etpass);
+        etusername2=(EditText)findViewById(R.id.etusername2);
         btnsignup = (Button)findViewById(R.id.btnnext);
 
 
@@ -57,6 +57,7 @@ public class SignupScreen extends AppCompatActivity {
             public void onClick(View v) {
                 String name = etname.getText().toString().trim();
                 String username = etusername.getText().toString().trim();
+                String username2=etusername2.getText().toString().trim();
                 String email = etemail.getText().toString().trim();
                 String phone = etphone.getText().toString().trim();
                 String password = edtpass.getText().toString().trim();
@@ -65,7 +66,7 @@ public class SignupScreen extends AppCompatActivity {
 
 
 
-                if (name.isEmpty()||username.isEmpty()||email.isEmpty()||phone.isEmpty()||password.isEmpty()) {
+                if (name.isEmpty()||username.isEmpty()||email.isEmpty()||phone.isEmpty()||password.isEmpty()||username2.isEmpty()) {
                     final Toast toast = Toast.makeText(getApplicationContext(), "Please fill all details", Toast.LENGTH_SHORT);
                     toast.show();
 
@@ -82,7 +83,7 @@ public class SignupScreen extends AppCompatActivity {
                     PD.show();
 
 
-                    ref.child("user_accounts").child(username).child("username").setValue(username, new Firebase.CompletionListener() {
+                    ref.child("user_accounts").child(username).child("college_id").setValue(username, new Firebase.CompletionListener() {
                         @Override
                         public void onComplete(FirebaseError firebaseError, Firebase firebase) {
 
@@ -101,6 +102,12 @@ public class SignupScreen extends AppCompatActivity {
 
                         }
                     });
+                    ref.child("user_accounts").child(username).child("username").setValue(username2, new Firebase.CompletionListener() {
+                        @Override
+                        public void onComplete(FirebaseError firebaseError, Firebase firebase) {
+
+                        }
+                    });
                     ref.child("user_accounts").child(username).child("email").setValue(email, new Firebase.CompletionListener() {
                         @Override
                         public void onComplete(FirebaseError firebaseError, Firebase firebase) {
@@ -114,20 +121,6 @@ public class SignupScreen extends AppCompatActivity {
 
                         }
                     });
-
-                    if(etpass.getText().toString()!= edtpass.getText().toString() ){
-                        final Toast toast = Toast.makeText(getApplicationContext(), "Oops!Passwords don't match!", Toast.LENGTH_SHORT);
-                        toast.show();
-
-                        Handler handler = new Handler();
-                        handler.postDelayed(new Runnable() {
-                            @Override
-                            public void run() {
-                                toast.cancel();
-                            }
-                        }, 500);
-
-                    }
                     PD.dismiss();
                     Intent nxtIntent = new Intent(SignupScreen.this, SignupScreen22.class);
                     nxtIntent.putExtra("username",name);

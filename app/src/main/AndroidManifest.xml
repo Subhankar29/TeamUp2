@@ -11,22 +11,37 @@
 
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            </intent-filter></activity>
+        <activity android:name=".MainActivity">
+
         </activity>
+
+        <activity android:name=".Coding_ppl_info"/>
+        <activity android:name=".Dance_ppl_info"/>
+        <activity android:name=".Literary_ppl_info"/>
+        <activity android:name=".Miscell_ppl_info"/>
+        <activity android:name=".Photo_ppl_info"/>
+        <activity android:name=".Music_ppl_info"/>
+        <activity android:name=".Theatrics_ppl_info"/>
+        <activity android:name=".Sports_ppl_info"/>
         <activity android:name=".SignupScreen"
             android:label="Details"
+            android:screenOrientation="portrait"
             />
         <activity android:name=".Logged"
+            android:screenOrientation="portrait"
             />
         <activity android:name=".Field_Profile"
+            android:screenOrientation="portrait"
             android:label="Profile" />
 
         <activity android:name=".SignupScreen22"
+            android:screenOrientation="portrait"
             android:label="Interests"
             />
 
@@ -36,62 +51,80 @@
         <activity
             android:name=".MainActivity2"
             android:label="Teamup"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
 
 
         <activity android:name=".Settings"
+            android:screenOrientation="portrait"
             android:label="Settings"/>
 
 
 
         <activity android:name=".Sports_interest"
+            android:screenOrientation="portrait"
             android:label="Sports"/>
         <activity android:name=".Sports_People"
+            android:screenOrientation="portrait"
             android:label="People"/>
 
 
         <activity android:name=".Dance_Interest"
+            android:screenOrientation="portrait"
             android:label="Dance"/>
         <activity android:name=".Dance_people"
+            android:screenOrientation="portrait"
             android:label="People"/>
 
 
 
         <activity android:name=".Music_Interest"
+            android:screenOrientation="portrait"
             android:label="Music"/>
         <activity android:name=".Music_people"
+            android:screenOrientation="portrait"
             android:label="People"/>
 
 
 
         <activity android:name=".Coding_Interest"
+            android:screenOrientation="portrait"
             android:label="Coding"/>
         <activity android:name=".Coding_people"
+            android:screenOrientation="portrait"
             android:label="People"/>
 
 
         <activity android:name=".Literary_Interest"
+            android:screenOrientation="portrait"
             android:label="Literary"/>
         <activity android:name=".Literary_people"
+            android:screenOrientation="portrait"
             android:label="People"/>
 
 
         <activity android:name=".Photo_Interest"
+            android:screenOrientation="portrait"
             android:label="Photography"/>
         <activity android:name=".Photo_People"
+            android:screenOrientation="portrait"
             android:label="People"/>
 
 
 
         <activity android:name=".Theatrics_Interest"
+            android:screenOrientation="portrait"
         android:label="Theatrics"/>
         <activity android:name=".Theatrics_people"
+            android:screenOrientation="portrait"
             android:label="People"/>
 
 
         <activity android:name=".Miscell_Interest"
+            android:screenOrientation="portrait"
         android:label="Miscellaneous"/>
         <activity android:name=".Miscell_people"
+            android:screenOrientation="portrait"
             android:label="People"/>
 
 

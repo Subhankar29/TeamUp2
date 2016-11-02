@@ -4,6 +4,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -79,6 +80,21 @@ public class MainActivity extends AppCompatActivity {
 
                                 Intent intent = new Intent(MainActivity.this, MainActivity2.class);
                                 startActivity(intent);
+
+                                //shared pref
+
+                                PreferenceManager.getDefaultSharedPreferences(MainActivity.this)
+                                        .edit()
+                                        .putBoolean("loggedin",true)
+                                        .apply();
+
+                                //retr
+
+                                boolean b = PreferenceManager.getDefaultSharedPreferences(MainActivity.this)
+                                        .getBoolean("loggedin",false);
+
+
+
 
                                 PD.dismiss();
                             } else {

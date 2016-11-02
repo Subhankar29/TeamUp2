@@ -38,6 +38,30 @@
 
 
     </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <ImageView
+                android:id="@+id/imname1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/name"
+                android:layout_margin="5dp"/>
+
+
+            <EditText
+                android:id="@+id/etusername2"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imname1"
+                android:hint="Username"
+                android:textColorHint="#BDBDBD"
+                android:layout_margin="5dp"/>
+
+
+        </RelativeLayout>
     <RelativeLayout
 
         android:layout_width="match_parent"
@@ -57,7 +81,7 @@
             android:layout_marginBottom="10dp"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/iname"
-            android:hint="USER ID"
+            android:hint="COLLEGE ID"
             android:textColorHint="#BDBDBD"
             android:layout_margin="5dp"/>
 
@@ -69,6 +93,15 @@
             android:text="ⓘ Enter the Identificaion Number given to you by your college."
             android:paddingLeft="70dp"
             android:paddingRight="50dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Class"
+            android:layout_margin="40dp"
+            android:textSize="20dp"/>
+
 
 
     <RelativeLayout

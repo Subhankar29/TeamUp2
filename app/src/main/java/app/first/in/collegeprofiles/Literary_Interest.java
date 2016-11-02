@@ -11,7 +11,6 @@ import android.widget.Button;
 public class Literary_Interest extends AppCompatActivity {
 
     MenuItem item;
-
     Button people;
 
 
@@ -24,8 +23,8 @@ public class Literary_Interest extends AppCompatActivity {
         actionBar.setHomeButtonEnabled(true);
         actionBar.setDisplayHomeAsUpEnabled(true);
 
+        people = (Button)findViewById(R.id.people);
 
-        people =(Button)findViewById(R.id.people);
 
         people.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,7 +35,6 @@ public class Literary_Interest extends AppCompatActivity {
         });
 
 
-
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -44,12 +42,9 @@ public class Literary_Interest extends AppCompatActivity {
             case android.R.id.home:
                 //Write your logic here
                 this.finish();
-
-
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
 }
-
