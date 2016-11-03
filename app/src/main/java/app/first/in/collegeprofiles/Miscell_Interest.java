@@ -12,6 +12,7 @@ public class Miscell_Interest extends AppCompatActivity {
     MenuItem item;
 
     Button people;
+    Button follow;
 
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,24 @@ public class Miscell_Interest extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
 
         people = (Button)findViewById(R.id.people);
+        follow = (Button)findViewById(R.id.butfol);
+
+        follow.setTag(1);
+        follow.setText("+ Follow");
+        follow.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick (View v) {
+                final int status =(Integer) v.getTag();
+                if(status == 1) {
+
+                    follow.setText("Following");
+                    v.setTag(0); //pause
+                } else {
+                    follow.setText("+ Follow");
+                    v.setTag(1); //pause
+                }
+            }
+        });
 
         people.setOnClickListener(new View.OnClickListener() {
             @Override

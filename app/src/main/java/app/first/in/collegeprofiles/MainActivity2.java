@@ -34,7 +34,7 @@ public class MainActivity2 extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         android.app.FragmentManager fn = getFragmentManager();
-        fn.beginTransaction().replace(R.id.home_fragment,new Home_fragment()).commit();
+        fn.beginTransaction().replace(R.id.home_fragment,new Interests()).commit();
     }
 
     @Override
@@ -100,6 +100,9 @@ public class MainActivity2 extends AppCompatActivity
 
 
             } else if (id == R.id.nav_logout) {
+
+                Intent nxtintent = new Intent(MainActivity2.this,MainActivity.class);
+                startActivity(nxtintent);
 
             } else if (id == R.id.nav_help) {
 
