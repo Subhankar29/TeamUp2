@@ -1,8 +1,10 @@
 package app.first.in.collegeprofiles;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -55,6 +57,26 @@ public class Photo_People extends AppCompatActivity {
 
         };
         mPeopleList.setAdapter(adapter);
+        mPeopleList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String temp = ((TextView)view).getText().toString();
+
+                Intent nxt = new Intent(Photo_People.this, Photo_ppl_info.class);
+                nxt.putExtra("username",temp);
+                startActivity(nxt);
+
+
+
+
+
+
+
+                //Intent intent = new Intent();
+
+                //intent.putExtra("jeu"temp)
+            }
+        });
     }
 
 }

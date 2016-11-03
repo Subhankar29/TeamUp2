@@ -3,4 +3,117 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:typeface="serif"
+                android:textSize="30dp"
+                android:padding="10dp"
+                android:text="NAME :"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:textColor="#000"
+                android:padding="30dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:padding="10dp"
+                android:text="SKILLS :"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/skills"
+                android:textColor="#000"
+                android:padding="30dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:typeface="serif"
+                android:textSize="30dp"
+                android:padding="10dp"
+                android:text="SEMESTER :"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:typeface="serif"
+                android:id="@+id/semester"
+                android:textColor="#000"
+                android:padding="30dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:typeface="serif"
+                android:textSize="30dp"
+                android:padding="10dp"
+                android:text="BRANCH :"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:typeface="serif"
+                android:id="@+id/branch"
+                android:textColor="#000"
+                android:padding="30dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:typeface="serif"
+                android:textSize="30dp"
+                android:padding="10dp"
+                android:text="CONTACT :"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:typeface="serif"
+                android:id="@+id/phone"
+                android:textColor="#000"
+                android:padding="30dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:typeface="serif"
+                android:textSize="30dp"
+                android:padding="10dp"
+                android:text="EMAIL :"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:typeface="serif"
+                android:id="@+id/email"
+                android:textColor="#000"
+                android:padding="30dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>

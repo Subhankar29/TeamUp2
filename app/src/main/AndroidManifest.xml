@@ -3,6 +3,8 @@
     package="app.first.in.collegeprofiles">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -41,7 +43,9 @@
             android:label="Profile" />
 
         <activity android:name=".SignupScreen22"
-            android:screenOrientation="portrait"
+            android:label="Interests"
+            />
+        <activity android:name=".Test"
             android:label="Interests"
             />
 
