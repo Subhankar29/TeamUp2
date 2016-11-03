@@ -81,7 +81,7 @@
             android:layout_marginBottom="10dp"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/iname"
-            android:hint="COLLEGE ID"
+            android:hint="College ID"
             android:textColorHint="#BDBDBD"
             android:layout_margin="5dp"/>
 
@@ -94,15 +94,56 @@
             android:paddingLeft="70dp"
             android:paddingRight="50dp"/>
 
+        <RelativeLayout
 
-        <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Class"
-            android:layout_margin="40dp"
-            android:textSize="20dp"/>
+            android:layout_margin="10dp">
+            <ImageView
+                android:id="@+id/imgclas"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/user"
+                android:layout_margin="5dp"/>
 
 
+            <EditText
+                android:id="@+id/etclass"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgclas"
+                android:hint="Class"
+                android:textColorHint="#BDBDBD"
+                android:layout_margin="5dp"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <ImageView
+                android:id="@+id/isec"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/user"
+                android:layout_margin="5dp"/>
+
+
+            <EditText
+                android:id="@+id/etsection"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/isec"
+                android:hint="Section"
+                android:textColorHint="#BDBDBD"
+                android:layout_margin="5dp"/>
+
+
+        </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"

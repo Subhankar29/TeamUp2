@@ -14,13 +14,14 @@ import android.os.Handler;
 
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
+import com.firebase.client.realtime.util.StringListReader;
 
 /**
  * Created by venkateshtata on 26/09/16.
  */
 public class SignupScreen extends AppCompatActivity {
 
-    EditText etname, etusername, etemail, etphone,etpass,etusername2, edtpass;
+    EditText etname, etusername, etemail, etphone,etpass,etusername2, edtpass,etclass,etsection;
     Button btnsignup;
     Firebase ref;
     ProgressDialog PD;
@@ -49,6 +50,8 @@ public class SignupScreen extends AppCompatActivity {
         edtpass = (EditText)findViewById(R.id.edtpass);
         etusername2=(EditText)findViewById(R.id.etusername2);
         btnsignup = (Button)findViewById(R.id.btnnext);
+        etclass=(EditText)findViewById(R.id.etclass);
+        etsection=(EditText)findViewById(R.id.etsection);
 
 
 
@@ -61,12 +64,12 @@ public class SignupScreen extends AppCompatActivity {
                 String email = etemail.getText().toString().trim();
                 String phone = etphone.getText().toString().trim();
                 String password = edtpass.getText().toString().trim();
-                String conpass=etpass.getText().toString().trim();
+                String classdetail=etclass.getText().toString().trim();
+                String section=etsection.getText().toString().trim();
 
 
 
-
-                if (name.isEmpty()||username.isEmpty()||email.isEmpty()||phone.isEmpty()||password.isEmpty()||username2.isEmpty()) {
+                if (name.isEmpty()||username.isEmpty()||email.isEmpty()||phone.isEmpty()||password.isEmpty()||username2.isEmpty()||classdetail.isEmpty()||section.isEmpty()) {
                     final Toast toast = Toast.makeText(getApplicationContext(), "Please fill all details", Toast.LENGTH_SHORT);
                     toast.show();
 
@@ -83,39 +86,51 @@ public class SignupScreen extends AppCompatActivity {
                     PD.show();
 
 
-                    ref.child("user_accounts").child(username).child("college_id").setValue(username, new Firebase.CompletionListener() {
+                    ref.child("user_accounts").child(username2).child("college_id").setValue(username, new Firebase.CompletionListener() {
                         @Override
                         public void onComplete(FirebaseError firebaseError, Firebase firebase) {
 
                         }
                     });
-                    ref.child("user_accounts").child(username).child("password").setValue(password, new Firebase.CompletionListener() {
+                    ref.child("user_accounts").child(username2).child("password").setValue(password, new Firebase.CompletionListener() {
                         @Override
                         public void onComplete(FirebaseError firebaseError, Firebase firebase) {
 
 
                         }
                     });
-                    ref.child("user_accounts").child(username).child("name").setValue(name, new Firebase.CompletionListener() {
+                    ref.child("user_accounts").child(username2).child("name").setValue(name, new Firebase.CompletionListener() {
                         @Override
                         public void onComplete(FirebaseError firebaseError, Firebase firebase) {
 
                         }
                     });
-                    ref.child("user_accounts").child(username).child("username").setValue(username2, new Firebase.CompletionListener() {
+                    ref.child("user_accounts").child(username2).child("username").setValue(username2, new Firebase.CompletionListener() {
                         @Override
                         public void onComplete(FirebaseError firebaseError, Firebase firebase) {
 
                         }
                     });
-                    ref.child("user_accounts").child(username).child("email").setValue(email, new Firebase.CompletionListener() {
+                    ref.child("user_accounts").child(username2).child("classdetail").setValue(classdetail, new Firebase.CompletionListener() {
+                        @Override
+                        public void onComplete(FirebaseError firebaseError, Firebase firebase) {
+
+                        }
+                    });
+                    ref.child("user_accounts").child(username2).child("section").setValue(section, new Firebase.CompletionListener() {
+                        @Override
+                        public void onComplete(FirebaseError firebaseError, Firebase firebase) {
+
+                        }
+                    });
+                    ref.child("user_accounts").child(username2).child("email").setValue(email, new Firebase.CompletionListener() {
                         @Override
                         public void onComplete(FirebaseError firebaseError, Firebase firebase) {
 
                         }
                     });
 
-                    ref.child("user_accounts").child(username).child("phone").setValue(phone, new Firebase.CompletionListener() {
+                    ref.child("user_accounts").child(username2).child("phone").setValue(phone, new Firebase.CompletionListener() {
                         @Override
                         public void onComplete(FirebaseError firebaseError, Firebase firebase) {
 
@@ -123,7 +138,7 @@ public class SignupScreen extends AppCompatActivity {
                     });
                     PD.dismiss();
                     Intent nxtIntent = new Intent(SignupScreen.this, SignupScreen22.class);
-                    nxtIntent.putExtra("username",name);
+                    nxtIntent.putExtra("username",username2);
                     startActivity(nxtIntent);
                 }
 
