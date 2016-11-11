@@ -16,6 +16,7 @@ public class SplashScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash_screen);
 
+
         Thread timerThread = new Thread() {
             public void run() {
                 try {

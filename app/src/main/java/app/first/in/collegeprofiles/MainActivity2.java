@@ -83,10 +83,6 @@ public class MainActivity2 extends AppCompatActivity
         if (id == R.id.nav_wall) {
 
             // Handle the camera action
-        } else if (id == R.id.nav_people) {
-
-
-
         } else if (id == R.id.nav_interests) {
             fn.beginTransaction().replace(R.id.home_fragment, new Interests()).commit();
 
