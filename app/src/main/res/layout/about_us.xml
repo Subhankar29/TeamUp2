@@ -2,7 +2,44 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/logo2"
+        android:id="@+id/imageView" />
 
+
+
+
+
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="390dp"
+                android:typeface="serif"
+                android:textSize="15dp"
+                android:text="We hope you are having a great time using our app. We have created this is app to better your very own local community. It is a platform which gives you the power to showcase your talents and make them discoverable. TeamUp gives you the opportunity to discover others who have the same interests or skill sets as you do.
+\n Say you have a project to complete and you need a person with a specific skill set. TeamUp is your best chance to find that person. Sure, there might be many other platforms or services through out the internet to get the job done. But what makes TeamUp take the upper hand is that, it is localised. With TeamUp you are sure to find that someone from your very own college. With our find people feature you can get a list of people with interests you are looking for and connect with them right away.
+\n Coming to the people who developed this app, We are a team of four young, hardworking college going students driven to make this world more connected in ways you've never imagined. We believe that people get more productive when they can connect to people according to their needs.
+\nMore the the number of connected productive people, better is their community. Better the community, better is our whole world. \n#TogethernessTilltheEnd
+\n - Team TeamUp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+
+
+                android:id="@+id/textView" />
+        </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </LinearLayout>
 
 
 </LinearLayout>
+
