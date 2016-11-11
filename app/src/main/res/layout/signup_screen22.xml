@@ -38,6 +38,7 @@
                android:layout_height="wrap_content"
                android:padding="10dp"
                android:text="Coding"
+               android:textStyle="bold"
                android:textColor="#616161"
                android:id="@+id/cod"
                android:textSize="25dp"/>
@@ -47,6 +48,7 @@
                android:layout_height="wrap_content"
                android:padding="10dp"
                android:text="Sports"
+               android:textStyle="bold"
                android:id="@+id/sport"
                android:textColor="#616161"
 
@@ -58,6 +60,7 @@
                android:padding="10dp"
                android:id="@+id/dnce"
                android:text="Dance"
+               android:textStyle="bold"
                android:textColor="#616161"
 
                android:textSize="25dp"/>
@@ -67,6 +70,7 @@
                android:layout_height="wrap_content"
                android:padding="10dp"
                android:text="Music"
+               android:textStyle="bold"
                android:id="@+id/music"
                android:textColor="#616161"
 
@@ -80,6 +84,7 @@
                android:textColor="#616161"
 
                android:text="Literary"
+               android:textStyle="bold"
                android:textSize="25dp"/>
 
 
@@ -91,6 +96,7 @@
                android:padding="10dp"
 
                android:text="Theatrics"
+               android:textStyle="bold"
                android:textColor="#616161"
 
                android:textSize="25dp"
@@ -102,6 +108,7 @@
            android:layout_height="wrap_content"
            android:padding="10dp"
            android:text="Photography"
+               android:textStyle="bold"
            android:textColor="#616161"
            android:id="@+id/phto"
 
@@ -113,6 +120,7 @@
                android:textSize="25dp"
                android:textColor="#616161"
                android:id="@+id/misc"
+               android:textStyle="bold"
                android:text="Miscellaneous"/>
 
 
