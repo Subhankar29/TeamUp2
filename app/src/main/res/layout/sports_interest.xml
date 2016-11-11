@@ -67,26 +67,7 @@
         />
 
 
-    <Button
 
-        android:text="Chat Room"
-
-        android:layout_width="175dp"
-
-        android:layout_height="50dp"
-
-        android:layout_marginTop="60dp"
-
-        android:id="@+id/butchat"
-
-        android:textColor="#FFF"
-
-        android:background="@drawable/shape"
-
-
-        android:layout_below="@+id/img"
-
-        android:layout_centerHorizontal="true" />
 
 
     <Button
@@ -102,39 +83,14 @@
         android:background="@drawable/shape"
 
         android:textColor="#FFF"
+        android:layout_below="@+id/img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="114dp"
 
 
-        android:layout_below="@+id/butchat"
-
-        android:layout_alignLeft="@+id/butchat"
-
-        android:layout_alignStart="@+id/butchat"
-
-        android:layout_marginTop="19dp" />
+       />
 
 
-    <Button
-
-        android:text="wall"
-
-        android:layout_width="175dp"
-
-        android:layout_height="50dp"
-
-        android:id="@+id/butwall"
-
-        android:background="@drawable/shape"
-
-        android:textColor="#FFF"
-
-
-        android:layout_below="@+id/people"
-
-        android:layout_alignLeft="@+id/people"
-
-        android:layout_alignStart="@+id/people"
-
-        android:layout_marginTop="19dp" />
 
 
     <ImageView

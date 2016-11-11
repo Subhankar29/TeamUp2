@@ -87,7 +87,6 @@ public class MainActivity2 extends AppCompatActivity
 
 
 
-
         } else if (id == R.id.nav_interests) {
             fn.beginTransaction().replace(R.id.home_fragment, new Interests()).commit();
 
@@ -105,6 +104,8 @@ public class MainActivity2 extends AppCompatActivity
                 startActivity(nxtintent);
 
             } else if (id == R.id.nav_help) {
+                Intent nxtintent = new Intent(MainActivity2.this,aboutus.class);
+                startActivity(nxtintent);
 
             }
         }

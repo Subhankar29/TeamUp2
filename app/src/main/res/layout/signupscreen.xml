@@ -237,7 +237,7 @@
                 android:id="@+id/btnnext"
                 android:text="next"
                 android:textColor="#FFF"
-
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/shape"
 
                 android:alpha="2"
