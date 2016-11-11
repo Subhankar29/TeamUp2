@@ -44,7 +44,7 @@
                     android:id="@+id/imname1"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/name"
+                    android:src="@drawable/username"
                     android:layout_margin="5dp"/>
 
 
@@ -101,7 +101,7 @@
                     android:id="@+id/imgclas"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/user"
+                    android:src="@drawable/branch"
                     android:layout_margin="5dp"/>
 
 
@@ -126,8 +126,8 @@
                     android:id="@+id/isec"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/user"
-                    android:layout_margin="5dp"/>
+                    android:src="@drawable/sem"
+                    android:layout_margin="7dp"/>
 
 
                 <EditText
