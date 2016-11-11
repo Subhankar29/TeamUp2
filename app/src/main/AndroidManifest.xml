@@ -58,10 +58,15 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"/>
 
+        <activity android:name=".aboutus"
+            android:screenOrientation="portrait"
+            android:label="About Us"/>
+
 
         <activity android:name=".Settings"
             android:screenOrientation="portrait"
-            android:label="Settings"/>
+             android:label="Settings"/>
+
 
 
 
