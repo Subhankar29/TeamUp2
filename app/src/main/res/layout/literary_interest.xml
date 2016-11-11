@@ -75,7 +75,7 @@
 
         android:layout_height="50dp"
 
-        android:id="@+id/btn_people"
+        android:id="@+id/people"
 
         android:background="@drawable/shape"
 

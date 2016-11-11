@@ -79,10 +79,11 @@ public class Interests extends Fragment {
                        Intent literary = new Intent(getActivity(), Literary_Interest.class);
                        startActivity(literary);
                        break;
+
                    case 6:
                        Intent photo = new Intent(getActivity(), Photo_Interest.class);
-                       startActivity(photo);
-                       break;
+                   startActivity(photo);
+                   break;
                    case 7:
                        Intent miscell= new Intent(getActivity(),Miscell_Interest.class);
                        startActivity(miscell);
@@ -114,12 +115,12 @@ public class Interests extends Fragment {
         items.add(getResources().getDrawable(R.drawable.sports2));
         items.add(getResources().getDrawable(R.drawable.dance));
         items.add(getResources().getDrawable(R.drawable.music2));
-
         items.add(getResources().getDrawable(R.drawable.coding));
         items.add(getResources().getDrawable(R.drawable.theatrics2));
-
         items.add(getResources().getDrawable(R.drawable.literary2));
+
         items.add(getResources().getDrawable(R.drawable.photo));
+
         items.add(getResources().getDrawable(R.drawable.misc2));
 
 

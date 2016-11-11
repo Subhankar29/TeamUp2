@@ -11,8 +11,9 @@ import android.widget.Button;
 public class Literary_Interest extends AppCompatActivity {
 
     MenuItem item;
-    Button follow;
+
     Button people;
+    Button follow;
 
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,15 +45,14 @@ public class Literary_Interest extends AppCompatActivity {
             }
         });
 
-
         people.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent nxtIntent = new Intent(Literary_Interest.this, Literary_people.class);
                 startActivity(nxtIntent);
+
             }
         });
-
 
     }
     @Override
