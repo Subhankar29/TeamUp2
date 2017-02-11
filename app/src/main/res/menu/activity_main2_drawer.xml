@@ -24,6 +24,11 @@
             android:id="@+id/nav_help"
             android:icon="@drawable/nav_help"
             android:title="About Us" />
+
+        <item
+            android:id="@+id/host_vent"
+            android:icon="@drawable/nav_help"
+            android:title="Host Event" />
     </group>
 
 

@@ -10,138 +10,137 @@
         android:allowBackup="true"
         android:icon="@drawable/logo2"
         android:label="TeamUp"
-
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity android:name=".SplashScreen">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter></activity>
-        <activity android:name=".MainActivity">
-
+            </intent-filter>
         </activity>
-
-        <activity android:name=".Coding_ppl_info"/>
-        <activity android:name=".Dance_ppl_info"/>
-        <activity android:name=".Literary_ppl_info"/>
-        <activity android:name=".Miscell_ppl_info"/>
-        <activity android:name=".Photo_ppl_info"/>
-        <activity android:name=".Music_ppl_info"/>
-        <activity android:name=".Theatrics_ppl_info"/>
-        <activity android:name=".Sports_ppl_info"/>
-        <activity android:name=".SignupScreen"
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".Coding_ppl_info" />
+        <activity android:name=".Dance_ppl_info" />
+        <activity android:name=".Literary_ppl_info" />
+        <activity android:name=".Miscell_ppl_info" />
+        <activity android:name=".Photo_ppl_info" />
+        <activity android:name=".Music_ppl_info" />
+        <activity android:name=".Theatrics_ppl_info" />
+        <activity android:name=".Sports_ppl_info" />
+        <activity
+            android:name=".SignupScreen"
             android:label="Details"
-            android:screenOrientation="portrait"
-            />
-        <activity android:name=".Logged"
-            android:screenOrientation="portrait"
-            />
-        <activity android:name=".Field_Profile"
-            android:screenOrientation="portrait"
-            android:label="Profile" />
-
-        <activity android:name=".SignupScreen22"
-            android:label="Interests"
-            />
-        <activity android:name=".Test"
-            android:label="Interests"
-            />
-
-
-
-
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Logged"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Field_Profile"
+            android:label="Profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SignupScreen22"
+            android:label="Interests" />
+        <activity
+            android:name=".Test"
+            android:label="Interests" />
         <activity
             android:name=".MainActivity2"
             android:label="Teamup"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-
-        <activity android:name=".aboutus"
-            android:screenOrientation="portrait"
-            android:label="About Us"/>
-
-
-        <activity android:name=".Settings"
-            android:screenOrientation="portrait"
-             android:label="Settings"/>
-
-
-
-
-        <activity android:name=".Sports_interest"
-            android:screenOrientation="portrait"
-            android:label="Sports"/>
-        <activity android:name=".Sports_People"
-            android:screenOrientation="portrait"
-            android:label="People"/>
-
-
-        <activity android:name=".Dance_Interest"
-            android:screenOrientation="portrait"
-            android:label="Dance"/>
-        <activity android:name=".Dance_people"
-            android:screenOrientation="portrait"
-            android:label="People"/>
-
-
-
-        <activity android:name=".Music_Interest"
-            android:screenOrientation="portrait"
-            android:label="Music"/>
-        <activity android:name=".Music_people"
-            android:screenOrientation="portrait"
-            android:label="People"/>
-
-
-
-        <activity android:name=".Coding_Interest"
-            android:screenOrientation="portrait"
-            android:label="Coding"/>
-        <activity android:name=".Coding_people"
-            android:screenOrientation="portrait"
-            android:label="People"/>
-
-
-        <activity android:name=".Literary_Interest"
-            android:screenOrientation="portrait"
-            android:label="Literary"/>
-        <activity android:name=".Literary_people"
-            android:screenOrientation="portrait"
-            android:label="People"/>
-
-
-        <activity android:name=".Photo_Interest"
-            android:screenOrientation="portrait"
-            android:label="Photography"/>
-        <activity android:name=".Photo_People"
-            android:screenOrientation="portrait"
-            android:label="People"/>
-
-
-
-        <activity android:name=".Theatrics_Interest"
-            android:screenOrientation="portrait"
-        android:label="Theatrics"/>
-        <activity android:name=".Theatrics_people"
-            android:screenOrientation="portrait"
-            android:label="People"/>
-
-
-        <activity android:name=".Miscell_Interest"
-            android:screenOrientation="portrait"
-        android:label="Miscellaneous"/>
-        <activity android:name=".Miscell_people"
-            android:screenOrientation="portrait"
-            android:label="People"/>
-
-
-
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".aboutus"
+            android:label="About Us"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Settings"
+            android:label="Settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Sports_interest"
+            android:label="Sports"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Sports_People"
+            android:label="People"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Dance_Interest"
+            android:label="Dance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Dance_people"
+            android:label="People"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Music_Interest"
+            android:label="Music"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Music_people"
+            android:label="People"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Coding_Interest"
+            android:label="Coding"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Coding_people"
+            android:label="People"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Literary_Interest"
+            android:label="Literary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Literary_people"
+            android:label="People"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Photo_Interest"
+            android:label="Photography"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Wall"
+            android:label="WALL"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Photo_People"
+            android:label="People"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Theatrics_Interest"
+            android:label="Theatrics"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Theatrics_people"
+            android:label="People"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Miscell_Interest"
+            android:label="Miscellaneous"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Miscell_people"
+            android:label="People"
+            android:screenOrientation="portrait" />
 
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value="MainActivity2" />
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
 
     </application>
 

@@ -9,15 +9,15 @@ import android.widget.Button;
 
 public class Miscell_Interest extends AppCompatActivity {
 
-    MenuItem item;
+            MenuItem item;
 
-    Button people;
-    Button follow;
+            Button people;
+            Button follow;
 
 
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.miscell_interest);
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.miscell_interest);
 
 
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();

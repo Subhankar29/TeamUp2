@@ -82,6 +82,11 @@ public class MainActivity2 extends AppCompatActivity
 
         if (id == R.id.nav_wall) {
 
+            Intent nxtintent = new Intent(MainActivity2.this, Wall.class);
+            startActivity(nxtintent);
+
+
+
             // Handle the camera action
         } else if (id == R.id.nav_interests) {
             fn.beginTransaction().replace(R.id.home_fragment, new Interests()).commit();

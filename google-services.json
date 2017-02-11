@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "110051796409",
+    "firebase_url": "https://collegeprofiles-39288.firebaseio.com",
+    "project_id": "collegeprofiles-39288",
+    "storage_bucket": "collegeprofiles-39288.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:110051796409:android:d57468ea3dac7d37",
+        "android_client_info": {
+          "package_name": "app.first.in.collegeprofiles"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "110051796409-q2vdg01d93k5uo3petf4leb657eh1vua.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATLYsbLssfpS146euvj3xXC5cx1Zq-TAU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
