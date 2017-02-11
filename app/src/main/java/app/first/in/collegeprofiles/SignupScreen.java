@@ -140,6 +140,7 @@ public class SignupScreen extends AppCompatActivity {
                     Intent nxtIntent = new Intent(SignupScreen.this, SignupScreen22.class);
                     nxtIntent.putExtra("username",username2);
                     startActivity(nxtIntent);
+
                 }
 
 

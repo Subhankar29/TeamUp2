@@ -57,6 +57,7 @@ public class SignupScreen22 extends AppCompatActivity {
                     Intent nxtIntent = new Intent(SignupScreen22.this, Field_Profile.class);
                     nxtIntent.putExtra("username",name);
                     startActivity(nxtIntent);
+                    finish();
 
                 }
 

@@ -80,6 +80,8 @@ public class MainActivity extends AppCompatActivity {
 
                                 Intent intent = new Intent(MainActivity.this, MainActivity2.class);
                                 startActivity(intent);
+                                edt_username.setText("");
+                                edt_password.setText("");
 
                                 //shared pref
 
@@ -120,6 +122,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent nxtIntent = new Intent(MainActivity.this, SignupScreen.class);
                 startActivity(nxtIntent);
+                edt_username.setText("");
+                edt_password.setText("");
 
 
 
