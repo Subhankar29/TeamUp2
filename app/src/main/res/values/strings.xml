@@ -107,4 +107,13 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
+    <string-array name="college_array">
+        <item>Select College</item>
+        <item>Christ University</item>
+        <item>M.S.Ramaiah</item>
+        <item>Dayananda Sagar College of Engineering</item>
+        <item>PES University</item>
+        <item>B.M.S College</item>
+        <item>R V College of engineering</item>
+    </string-array>
 </resources>
